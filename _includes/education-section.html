@@ -7,15 +7,19 @@
         <h2 class="section-title">{{ site.data.settings.education-title }}</h2>
       </div>
       {% for education in site.data.settings.education %}
-      <div class="col-lg-6 col-md-6 mb-80">
-        <div class="d-flex">
-          <div class="mr-lg-5 mr-3">
+      <div class="col-lg-6 col-md-6 mb-80 d-flex justify-content-center">
+        <div class="d-flex align-items-center">
+          <!-- <div class="mr-lg-5 mr-3">
             <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
-          </div>
-          <div>
-            <p class="text-dark mb-1">{{ education.date }}</p>
-            <h4>{{ education.name }}</h4>
-            <p class="mb-0 text-light">{{ education.organization }}</p>
+          </div> -->
+          <div class="d-flex align-items-start">
+            <!-- Add the logo of your alma mater -->
+            <img class="alma-mater-logo mr-3" src="{{ site.baseurl }}/assets/images/team/Auburn_Tigers_logo.svg.png" alt="Alma Mater Logo">
+            <div>
+              <p class="text-dark mb-1">{{ education.date }}</p>
+              <h4>{{ education.name }}</h4>
+              <p class="mb-0 text-light">{{ education.organization }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -23,7 +27,7 @@
     </div>
   </div>
   <!-- bg image -->
-  <img class="img-fluid edu-bg-image w-100" src="{{ site.baseurl }}/assets/images/backgrounds/education-bg.png" alt="bg-image">
+  <!-- <img class="img-fluid edu-bg-image w-100" src="{{ site.baseurl }}/assets/images/backgrounds/education-bg.png" alt="bg-image"> -->
 </section>
 <!-- /education -->
 {% endif %}

@@ -11,7 +11,10 @@ VERSION:	Versoin Number
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
-
+* {
+    font-family: 'Roboto', sans-serif !important;
+  }
+  
 @import 'variables';
 
 @import 'mixins';
@@ -33,3 +36,19 @@ VERSION:	Versoin Number
 @import 'templates/about';
 
 @import 'templates/portfolio';
+
+* {
+    font-family: 'Roboto', sans-serif !important;
+  }
+
+  .custom-tooltip .tooltip-inner {
+    background-color: #333; /* Change the background color */
+    color: #fff; /* Change the text color */
+    border-radius: 8px; /* Add border-radius */
+    padding: 8px; /* Add padding */
+  }
+  
+  .custom-tooltip .arrow::before {
+    border-color: transparent transparent #333 transparent;
+  }
+  
