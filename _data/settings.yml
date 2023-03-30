@@ -13,7 +13,7 @@ copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.c
 
 menu:
   - { name: About, link: "/about" }
-  - { name: Blog, link: "/blog" }
+  # - { name: Blog, link: "/blog" }
   - { name: Portfolio, link: "/portfolio" }
   - { name: Contact, link: "/contact" }
 
@@ -35,7 +35,7 @@ blurb-btn-name: know more
 #-------------------------------
 # Experience Section
 
-experience-title: Experience
+experience-title: Professional Experience
 experience:
   - {
       name: Neuroscience Research Assistant,
@@ -68,110 +68,11 @@ education:
     }
 
 
-#-------------------------------
-# Portfolio (Section and Page)
-
-# Portfolio Home Section
-portfolio-home-items:
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-1.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-      
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-2.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-3.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-4.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-5.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-
-
 # Portfolio Page
 portfolio-label:
   - { title: "Construction Management", type: "cm" }
   - { title: "Process Design", type: "design" }
   - { title: "Emerging Technologies", type: "newtech" }
-
-portfolio-items:
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-1.png"
-    url:  "/_projects/process-simulation"
-    portfolio-type:
-      - type: "design"
-
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-2.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-3.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-4.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-5.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-6.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-7.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-
-  - layout: post
-    title: "Process Simulation"
-    image: "assets/images/portfolio/item-8.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-
 
 
 skills-title: Skills

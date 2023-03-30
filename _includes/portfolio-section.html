@@ -1,4 +1,4 @@
-{% if site.data.settings.portfolio-home-items %}
+{% if site.projects %}
 <!-- portfolio -->
 <section class="section">
   <div class="container">
@@ -8,18 +8,18 @@
       </div>
     </div>
     <div class="row shuffle-wrapper">
-      {% for item in site.data.settings.portfolio-home-items %}
+      {% for project in site.projects %}
       <div class="col-lg-4 col-6 mb-4 shuffle-item">
         <div class="position-relative rounded hover-wrapper">
-          <img src="{{ site.baseurl }}/{{ item.image }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+          <img src="{{ site.baseurl }}{{ project.image }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="{{ item.url }}">view project</a>
+              <a class="btn btn-light btn-sm" href="{{ site.baseurl }}{{ project.url }}">view project</a>
             </div>
           </div>
         </div>
         <div class="portfolio-title text-center">
-          <h5>{{ item.title }}</h5>
+          <h5>{{ project.title }}</h5>
         </div>
       </div>
       {% endfor %}
@@ -28,3 +28,4 @@
 </section>
 <!-- /portfolio -->
 {% endif %}
+
