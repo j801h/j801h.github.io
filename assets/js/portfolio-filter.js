@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var shuffleInstance = new Shuffle(document.querySelector('.shuffle-wrapper'), {
+  var shuffleWrapper = document.querySelector('.shuffle-wrapper');
+  if (!shuffleWrapper) return;
+
+  var shuffleInstance = new Shuffle(shuffleWrapper, {
     itemSelector: '.shuffle-item',
     sizer: null,
   });
@@ -20,5 +23,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
-  

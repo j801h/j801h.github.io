@@ -20,16 +20,34 @@
         </div>
       </div>
       <script>
-        Circles.create({
-          id: 'circle-{{ forloop.index }}',
-          radius: 60,
-          value: {{ skill.value }},
-          maxValue: 100,
-          width: 10,
-          text: function(value) { return value + '%'; },
-          colors: ['#eee', '{{ skill.color }}'],
+        var circle = new ProgressBar.Circle('#circle-{{ forloop.index }}', {
+          strokeWidth: 10,
+          easing: 'easeInOut',
           duration: 400,
+          color: '{{ skill.color }}',
+          trailColor: '#eee',
+          trailWidth: 10,
+          svgStyle: {
+            display: 'block',
+            width: '100%',
+            height: '100%'
+          },
+          text: {
+            autoStyleContainer: false
+          },
+          from: { color: '{{ skill.gradientStart }}', width: 10 },
+          to: { color: '{{ skill.gradientEnd }}', width: 10 },
+          step: function(state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            circle.path.setAttribute('stroke-width', state.width);
+            var value = Math.round(circle.value() * 100);
+            circle.setText(value + '%');
+          }
         });
+
+        circle.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+        circle.text.style.fontSize = '2rem';
+        circle.animate({{ skill.value }});
       </script>
       {% endfor %}
     </div>
