@@ -1,9 +1,9 @@
 ---
 layout: page
-title: QA / QC
+title: Pet Food Process Expansion - QA / QC Lead
 image: /assets/images/portfolio/item-4.png
 description: A brief description of your project.
-tags: ["Client Relationships", "QA / QC"]
+tags: ["Client Relationships"]
 ---
 
 ### Project: Dogfood Factory Process Expansion (100% Capacity Increase)

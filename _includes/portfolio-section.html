@@ -9,7 +9,7 @@
     </div>
     <div class="row shuffle-wrapper">
       {% for project in site.projects %}
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4 shuffle-item"> <!-- Adjusted column classes here -->
         <div class="position-relative rounded hover-wrapper">
           <img src="{{ site.baseurl }}{{ project.image }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
@@ -18,7 +18,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-title text-center">
+        <div class="portfolio-title text-center" style="margin-top: 10px;"> <!-- Added custom margin here -->
           <h5>{{ project.title }}</h5>
         </div>
       </div>
@@ -28,4 +28,5 @@
 </section>
 <!-- /portfolio -->
 {% endif %}
+
 

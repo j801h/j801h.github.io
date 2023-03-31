@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Construction Management
+title: Ice Cream Process Expansion Construction Management
 image: /assets/images/portfolio/item-2.png
 description: A brief description of your project.
-tags: ["Construction Management"]
+tags: ["Construction Management", "Client Relationships"]
 ---
 
 
