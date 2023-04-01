@@ -6,14 +6,15 @@ image: assets/images/about/author.jpg
 signature: assets/images/about/signature.png
 ---
 
-Hi, I’m Jake, a process design engineer with a passion for sustainability. I have nearly three years of experience in operating, designing, and optimizing industrial processes.
+Hi, I’m Jake, a process design engineer with a passion for sustainability. With nearly three years under my belt, I've honed my skills in operating, designing, and refining industrial processes. Feel free to explore the 'Portfolio' tab for a glimpse into my recent projects!
 
-I have a Bachelor's of Science in Chemical Engineering from Auburn University, where I learned the fundamentals of first-principles engineering. I also have a (certification or credential) in (area of expertise), which demonstrates my commitment to continuous learning and professional development.
+As an Auburn University alumnus, I hold a Bachelor's of Science in Chemical Engineering, where I immersed myself in the world of first-principles engineering. Along my professional journey, I've gained expertise in 'programmatic engineering,' empowering me to merge engineering principles with process simulation and optimization projects.
 
-Some of my proudest achievements include (briefly describe one or two projects or awards that showcase your skills and impact). For example, I (describe what you did and what was the outcome).
+Some of my proudest achievements include developing a reinforcement learning process simulation platform (see  [Distillery Process Simulation]( {% link _projects/process-simulation.md %} ))
+and a custom network data scraper that compiled 30 years of procurement data into a searchable database (see  [Building a Database of Historical Procurement Data]( {% link _projects/database.md %} )), enabling my firm to glean insights from their institutional knowledge-base not previously possible.
 
-Besides engineering, I enjoy (personal details that relate to your career goals or interests). For instance, I love traveling and exploring new cultures and landscapes. Unfortunately, I had a serious injury while traveling in Vietnam last year, which prevented me from working for several months. However, I used this time to recover, reflect, and reevaluate my career aspirations. I realized that I want to work for a company that shares my vision of creating a more sustainable and resilient world.
+Besides engineering, I enjoy traveling and exploring new cultures and landscapes. Unfortunately, I had a serious injury while traveling in Vietnam last year, which prevented me from working for several months. However, this period of recovery and reflection sparked a reevaluation of my career goals, solidifying my commitment to work with organizations striving for a sustainable, resilient future.
 
-If you are looking for a process design engineer who can deliver innovative solutions, collaborate effectively with diverse teams, and adapt to changing environments, I would love to hear from you. You can reach me at jakeheinereng@gmail.com or 530-227-5002. Thank you for visiting my portfolio and have a great day!
+If you're in search of a process design engineer with a flair for innovation, a knack for team collaboration, and the adaptability to thrive in dynamic environments, I'd be thrilled to connect. You can reach me at jakeheinereng@gmail.com or 530-227-5002. Thanks for stopping by my portfolio, and have a fantastic day!
 
                    

@@ -1,29 +1,30 @@
 ---
 layout: page
-title: Pet Food Process Expansion - QA / QC Lead
+title: Pet Food Process Expansion - QA / QC Co-Lead
 image: /assets/images/portfolio/item-4.png
 description: A brief description of your project.
-tags: ["Client Relationships"]
+tags: ["Client Relationships", "Construction Management"]
 ---
 
-### Project: Dogfood Factory Process Expansion (100% Capacity Increase)
+### Role: Project QA/QC Co-Lead
 
-### Overview
-I had the opportunity to lead a team of engineers on an exciting project to expand a dogfood factory process and increase capacity by 100% over the course of 12 months. My role was to ensure that all work met the highest standards of quality assurance/quality control (QA/QC), which involved working closely with domain experts to audit work done by various subcontractors and using the 'CxAlloy' software tool to track progress through each stage of construction. Thanks to the hard work and collaboration of everyone involved, we were able to successfully complete the project on time and within budget.
-
-### Responsibilities
-- Collaborated closely with domain experts to ensure that all work met the highest QA/QC standards.
-
-- Audited work done by various subcontractors and proposed corrections where necessary.
-
-- Led a team of engineers through the process of QA/QC over nine months.
-
-- Used the 'CxAlloy' software tool to track work progress through each stage of construction.
-
-- Worked closely with contractors to ensure that all work was performed on time and to the required standards.
+At the height of the pandemic, I was tasked with joining the QA/QC effort on a large process expansion project, and quickly advanced to QA/QC co-lead, supervising a team of five engineers executing QA/QC work for all work performed on the project. This project was a top priority for my firm, as supply-chain issues put it at risk of entering a phase of liquidated damages (contract terms outlined pre-Covid). It was essential to complete work as quickly as possible and collaborate across teams as effectively as possible in order to productively advance the project.
 
 
-### Results
-Thanks to our team's diligent efforts and attention to detail, we were able to successfully expand the dogfood factory process and increase capacity by 100%. Our use of the 'CxAlloy' software tool allowed us to catch and correct any issues before they became larger problems, and our collaboration with all stakeholders ensured that the project met their high standards. It was a pleasure to work with such a talented and dedicated team, and I am grateful for the experience.
 
-Overall, this project was a great opportunity for me to develop my skills in managing complex projects, maintaining high standards of quality, and collaborating effectively with stakeholders. I am proud of what we accomplished together and look forward to bringing this same level of dedication and expertise to future projects.
+### Responsibilities and Achievements:
+
+- Successfully co-led a team of engineers in a 12-month project, ensuring QA/QC standards were met for a $260MM process expansion project. 
+- Collaborated closely with domain experts (spanning Process Mechanical, Electrical, Controls, Utilities, and Architectural domains) to evaluate and audit subcontractor work, proposing necessary corrections to maintain quality.
+- Utilized the CxAlloy software tool to effectively track work progress through each stage of construction, identifying and addressing potential issues. All project work was audited across five levels:
+    - L1: FAT - ensuring equipment met standards prior to shipping to site
+    - L2: Delivered equipment audited against design specifications
+    - L3: Proper Installation of Equipment / Completion of Project Scope
+    - L4: Dry Testing of Project Systems
+    - L5: Wet Testing of Project Systems
+- Worked hand-in-hand with contractors, ensuring timely completion of work that met required standards.
+- Successfully audited and documented all work performed over 12 months
+
+### Results:
+
+Through our team's consistent efforts and the efficient application of CxAlloy, we successfully expanded the pet food factory process, doubling its capacity. By actively engaging with stakeholders and maintaining a focus on quality, we secured the project's success. This project offered valuable experience in project management, quality assurance, and stakeholder collaboration.
