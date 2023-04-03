@@ -489,12 +489,19 @@ li {
   }
 
   .hero-row .col-lg-8 {
-    order: 2;
+    order: 1; /* Change this value to 1 to place the title above the image */
     text-align: center;
   }
 
   .hero-row .col-lg-4 {
-    order: 1;
+    order: 2; /* Change this value to 2 to place the image below the title */
     padding-bottom: 20px;
+  }
+}
+
+/* Hide background image on mobile devices */
+@media (max-width: 768px) {
+  .bg-image {
+    display: none;
   }
 }
