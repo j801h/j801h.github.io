@@ -11,15 +11,15 @@ title: Process Engineer Intern
 
 As a Process Engineer Co-op at the Mosaic Company, I had the opportunity to apply my academic background and develop a deep understanding of the industrial environment. I worked closely with a diverse team of professionals to optimize processes, improve efficiency, and achieve sustainable growth. My main responsibilities during my time at Mosaic included:
 
-- Process Analysis and Optimization: Conducted detailed process analysis to identify bottlenecks and inefficiencies, and proposed data-driven solutions to optimize various production processes, leading to an [X]% increase in overall efficiency.
+- Process Analysis and Optimization: Conducted detailed process analysis to identify bottlenecks and inefficiencies, and proposed data-driven solutions to optimize various production processes.
 
-- Root Cause Analysis: Investigated process deviations and equipment malfunctions, utilizing root cause analysis techniques, to identify issues and implement corrective actions, reducing downtime by [X]%.
+- Root Cause Analysis: Investigated process deviations and equipment malfunctions, utilizing statitstical root cause analysis techniques, to identify issues and implement corrective actions (see [Live Performance Analysis S&T Heat Exchanger](/projects/hxfer-check/) for a detailed example).
 
-- Continuous Improvement: Participated in the implementation of [Company Name]'s continuous improvement initiatives, including [Lean/Six Sigma/5S] methodology, to streamline production processes and reduce waste.
+- Continuous Improvement: Participated in the implementation of Masaic's continuous improvement initiatives, including Six Sigma methodology, to streamline production processes and reduce waste.
 
 - Technical Documentation: Assisted in the development and maintenance of standard operating procedures (SOPs), process flow diagrams (PFDs), and piping and instrumentation diagrams (P&IDs) to ensure accuracy and compliance with industry standards.
 
-- Cross-functional Collaboration: Collaborated with cross-functional teams, including quality, maintenance, and production, to identify opportunities for process improvements and cost savings, resulting in an estimated annual savings of $[X].
+- Cross-functional Collaboration: Collaborated with cross-functional teams, including quality, maintenance, and production, to identify opportunities for process improvements and cost savings.
 
 - Project Management: Supported the planning, execution, and monitoring of various process improvement projects, ensuring projects were completed on time and within budget.
 

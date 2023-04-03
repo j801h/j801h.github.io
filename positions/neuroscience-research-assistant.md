@@ -25,6 +25,8 @@ During my tenure as a Neuroscience Assistant Researcher at the Harrison School o
 
 - Collaboration and Networking: Actively participated in laboratory meetings, seminars, and conferences, fostering a collaborative research environment and expanding my professional network within the field of neuroscience.
 
-My experience as a Neuroscience Assistant Researcher at Auburn was instrumental in shaping my ability to conduct thorough research and in deepening my understanding of the scientific method. I am eager to apply these skills to my future work.
+My experience as a Neuroscience Assistant Researcher at Auburn was instrumental in shaping my ability to conduct thorough research and in deepening my understanding of the scientific method. I am eager to apply these skills to my future work. If you are seeking a process engineer / process design engineer with experience in research best-practices, please consider [reaching out](/contact)
 
-[Return to Home](/)
+<br>
+
+or [Return to Home](/)
