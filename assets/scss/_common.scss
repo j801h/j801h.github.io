@@ -489,15 +489,19 @@ li {
   }
 
   .hero-row .col-lg-8 {
-    order: 1; /* Change this value to 1 to place the title above the image */
+    order: 1;
     text-align: center;
+    display: flex;
+    justify-content: center; /* Add this line to center the title */
+    width: 100%; /* Add this line to make the title container full width */
   }
 
   .hero-row .col-lg-4 {
-    order: 2; /* Change this value to 2 to place the image below the title */
+    order: 2;
     padding-bottom: 20px;
   }
 }
+
 
 /* Hide background image on mobile devices */
 @media (max-width: 768px) {
@@ -509,6 +513,6 @@ li {
 /* Adjust skill title font size on mobile devices */
 @media (max-width: 768px) {
   .skill-title {
-    font-size: 0.8rem; /* Adjust the font size as needed */
+    font-size: 0.9rem; /* Adjust the font size as needed */
   }
 }
