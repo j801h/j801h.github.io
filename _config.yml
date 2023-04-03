@@ -47,3 +47,8 @@ kramdown:
 collections:
   positions:
      output: true
+
+collections:
+  projects:
+     output: true
+
