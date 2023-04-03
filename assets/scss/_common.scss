@@ -76,11 +76,11 @@ a:hover {
   }
 }
 
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 18px; /* Replace 'mobile-font-size' with the desired size for mobile, e.g., 18px */
-  }
-}
+// @media (max-width: 768px) {
+//   .section-title {
+//     font-size: 18px; /* Replace 'mobile-font-size' with the desired size for mobile, e.g., 18px */
+//   }
+// }
 
 
 .bg-cover {
@@ -477,5 +477,24 @@ li {
   
   .filter-buttons .btn {
     margin: 4px; /* Add some margin around each button */
+  }
+}
+
+/* Mobile hero section styles */
+@media (max-width: 768px) {
+  .hero-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-row .col-lg-8 {
+    order: 2;
+    text-align: center;
+  }
+
+  .hero-row .col-lg-4 {
+    order: 1;
+    padding-bottom: 20px;
   }
 }
