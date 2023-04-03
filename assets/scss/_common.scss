@@ -290,10 +290,14 @@ textarea.form-control{
 @media (max-width: 768px) {
   .hero-image {
     /* Styles for mobile devices and smaller screens */
-    max-width: 150px; /* Adjust this value to set the desired maximum width for mobile */
+    max-width: 200px; /* Adjust this value to set the desired maximum width for mobile */
+    display: block; /* Set display to block for centering */
+    margin-left: auto;
+    margin-right: auto;
     /* The other styles will be inherited from the default .hero-image styles */
   }
 }
+
 
 
 .portfolio-title {
