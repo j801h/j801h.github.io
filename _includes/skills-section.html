@@ -16,7 +16,7 @@
         <h2 class="section-title">{{ site.data.settings.skills-title }}</h2>
       </div>
       {% for skill in site.data.settings.skills %}
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+      <div class="col-lg-3 col-sm-6 col-6 mb-4 mb-lg-0"> <!-- Add 'col-6' class here -->
         <div class="card shadow text-center">
           <div class="position-relative rounded-top progress-wrapper">
             <div class="circular-progress-wrapper" data-toggle="tooltip" data-placement="top" title="{{ skill.description }}">
@@ -24,36 +24,38 @@
             </div>
           </div>
           <div class="card-footer bg-white">
-            <h4 class="card-title">{{ skill.name }}</h4>
+            <h4 class="card-title skill-title">{{ skill.name }}</h4>
           </div>
         </div>
       </div>
-      <script>
-        $(document).ready(function() {
-          {% for skill in site.data.settings.skills %}
-            var circle = Circles.create({
-              id: 'circle-{{ forloop.index }}',
-              radius: 60,
-              value: {{ skill.value }},
-              maxValue: 100,
-              width: 10,
-              text: function(value) { return value + '%'; },
-              colors: ['#eee', '{{ skill.color }}'],
-              duration: 400,
-              textClass: 'circle-text'
-            });
-    
-            var circleText = document.querySelector('#circle-{{ forloop.index }} .circle-text');
-            if (circleText) {
-              circleText.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-              circleText.style.fontSize = '2rem';
-            }
-          {% endfor %}
-        });
-      </script>
       {% endfor %}
     </div>
   </div>
 </section>
 <!-- /skills -->
 {% endif %}
+
+<script>
+  $(document).ready(function() {
+    {% for skill in site.data.settings.skills %}
+      var circle = Circles.create({
+        id: 'circle-{{ forloop.index }}',
+        radius: 60,
+        value: {{ skill.value }},
+        maxValue: 100,
+        width: 10,
+        text: function(value) { return value + '%'; },
+        colors: ['#eee', '{{ skill.color }}'],
+        duration: 400,
+        textClass: 'circle-text'
+      });
+
+      var circleText = document.querySelector('#circle-{{ forloop.index }} .circle-text');
+      if (circleText) {
+        circleText.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+        circleText.style.fontSize = '2rem';
+      }
+    {% endfor %}
+  });
+</script>
+
