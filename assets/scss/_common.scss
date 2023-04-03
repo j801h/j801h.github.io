@@ -467,3 +467,15 @@ li {
 .download-btn-wrapper {
   display: inline-block;
 }
+
+/* Mobile filter styles */
+@media (max-width: 768px) {
+  .filter-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .filter-buttons .btn {
+    margin: 4px; /* Add some margin around each button */
+  }
+}
