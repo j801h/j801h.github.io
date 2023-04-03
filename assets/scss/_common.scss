@@ -516,3 +516,10 @@ li {
     font-size: 0.9rem; /* Adjust the font size as needed */
   }
 }
+
+/* Adjust hero title font size on mobile devices */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 38px; /* Adjust this value to your preferred font size for mobile devices */
+  }
+}
