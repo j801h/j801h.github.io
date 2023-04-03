@@ -38,10 +38,10 @@ blurb-btn-name: know more
 experience-title: Professional Experience
 experience:
   - {
-      name: Neuroscience Research Assistant,
-      icon: "flask.png",
-      date: "Jan 2016 - Jul 2018",
-      organization: "Auburn University",
+      name: Process Design Engineer,
+      icon: "molecularfamily.png",
+      date: "May 2020 - Jul 2022",
+      organization: "Dennis Group",
     }
   - {
       name: Process Engineer Intern,
@@ -50,11 +50,13 @@ experience:
       organization: "The Mosaic Company",
     }
   - {
-      name: Process Design Engineer,
-      icon: "molecularfamily.png",
-      date: "May 2020 - Jul 2022",
-      organization: "Dennis Group",
+      name: Neuroscience Research Assistant,
+      icon: "flask.png",
+      date: "Jan 2016 - Jul 2018",
+      organization: "Auburn University",
     }
+
+
 
 #-------------------------------
 # Education Section
