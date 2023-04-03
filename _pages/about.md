@@ -8,7 +8,7 @@ signature: assets/images/about/signature.png
 
 Hi, I’m Jake, a process design engineer with a passion for sustainability. With nearly three years under my belt, I've honed my skills in operating, designing, and refining industrial processes. Feel free to explore the 'Portfolio' tab for a glimpse into my recent projects!
 
-As an Auburn University alumnus, I hold a Bachelor's of Science in Chemical Engineering, where I immersed myself in the world of first-principles engineering. Along my professional journey, I've gained expertise in 'programmatic engineering,' empowering me to merge engineering principles with process simulation and optimization projects.
+As an Auburn University alumnus, I hold a Bachelor's of Science in Chemical Engineering, where I learned the fundamentals of first-principles engineering. Along my professional journey, I've gained expertise in 'programmatic engineering,' empowering me to merge engineering principles with process simulation and advanced design methods.
 
 Some of my proudest achievements include developing a reinforcement learning process simulation platform (see  [Distillery Process Simulation]( {% link _projects/process-simulation.md %} ))
 and a custom network data scraper that compiled 30 years of procurement data into a searchable database (see  [Building a Database of Historical Procurement Data]( {% link _projects/database.md %} )), enabling my firm to glean insights from their institutional knowledge-base not previously possible.

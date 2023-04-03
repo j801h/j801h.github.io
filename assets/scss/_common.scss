@@ -72,8 +72,16 @@ a:hover {
   &-title {
     margin-bottom: 80px;
     font-family: $secondary-font;
+    font-size: default-font-size; /* Replace 'default-font-size' with the current size, e.g., 24px */
   }
 }
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 18px; /* Replace 'mobile-font-size' with the desired size for mobile, e.g., 18px */
+  }
+}
+
 
 .bg-cover {
   background-size: cover;
@@ -290,7 +298,7 @@ textarea.form-control{
 @media (max-width: 768px) {
   .hero-image {
     /* Styles for mobile devices and smaller screens */
-    max-width: 200px; /* Adjust this value to set the desired maximum width for mobile */
+    max-width: 225px; /* Adjust this value to set the desired maximum width for mobile */
     display: block; /* Set display to block for centering */
     margin-left: auto;
     margin-right: auto;
