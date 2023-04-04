@@ -156,3 +156,5 @@ This simple concept was used to accumulate 250,000+ line items for equipment pro
 
 
 More impressive tools exist today for accomplishing tasks like this ([see: GPT-4 w/ Pinecone embeddings](https://www.youtube.com/watch?v=ih9PBGVVOO4)), but when considered in its context two years ago, I think this project effectively demonstrates my commitment to adopting and leveraging new technologies in order to empower myself and others.
+
+If any of these projects sound pertinent to a role you are trying to fill, please consider [reaching out](/contact) for a conversation, or feel free to browse my [other recent projects](/portfolio).

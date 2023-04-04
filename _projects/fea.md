@@ -43,3 +43,5 @@ After the simulation is complete, the results are analyzed to extract valuable i
 So far, I have sourced an appropriate [CAD file for a shell-and-tube heat exchanger](https://grabcad.com/library/shell-and-tube-heat-exchanger-41) and performed necessary pre-processing steps to ensure accurate mesh dimensions (this model is approximately 3' in length, for some reason). Further, I have developed the mesh representations for the exchanger, shown here.
 
 I will provide detailed updates as I make more progress. If you have any ideas for improving this strategy, please reach out! I would love to collaborate on this and ideas for generalizing this procedure as digital twin simulation tech becomes more accessible.
+
+If any of these projects sound pertinent to a role you are trying to fill, please consider [reaching out](/contact), or feel free to browse my [other recent projects](/portfolio).

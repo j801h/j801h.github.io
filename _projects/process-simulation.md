@@ -100,3 +100,5 @@ While we were successful in delivering a useful tool to this client, we did not 
 
 Regardless, our client was pleased with our custom solution to address their process needs, and my partner and I learned *a lot* along the way. 
 
+If any of these projects sound pertinent to a role you are trying to fill, please consider [reaching out](/contact), or feel free to browse my [other recent projects](/portfolio).
+

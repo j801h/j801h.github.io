@@ -28,3 +28,5 @@ In my role as Construction Management Supervisor, I effectively oversaw a major 
 
 ### Results:
 Through effective supervision, safety enforcement, and communication, the ice-cream facility expansion project was completed successfully, substantially increasing the client's production capacity. This experience provided valuable insight into construction management, safety procedures, and stakeholder collaboration.
+
+If any of these projects sound pertinent to a role you are trying to fill, please consider [reaching out](/contact) for a conversation, or feel free to browse my [other recent projects](/portfolio).
