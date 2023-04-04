@@ -13,6 +13,9 @@ tags: ["Process Design"]
 
 In this project, I conducted an in-depth performance analysis of a shell-and-tube heat exchanger at a fertilizer production plant. The goal was to evaluate the heat exchanger's current performance against its theoretical and historical performance data, ultimately determining the need for maintenance due to fouling.
 
+### The Speed-Reader's 'So-What'
+During my role as a Process Engineer Intern, I successfully analyzed the performance of a shell-and-tube heat exchanger at a fertilizer production plant, revealing significant fouling issues that required maintenance. By comparing theoretical, historical, and current performance data, I identified a decline in heat exchanger efficiency and the need for immediate action. My proactive approach led to a 33% improvement in the heat exchanger's effectiveness, optimizing plant operations, reducing energy costs, and preventing potential equipment failure. This experience showcases my ability to identify and address performance issues in critical industrial processes and contribute to the overall efficiency and sustainability of operations.
+
 ### Background
 
 - Shell-and-tube heat exchangers are critical components in many industrial processes, including fertilizer production

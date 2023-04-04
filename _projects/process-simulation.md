@@ -5,9 +5,17 @@ image: /assets/images/portfolio/item-1.png
 description: A brief description of your project.
 tags: ["Process Design", "Process Simulation"]
 ---
+### Role: Process Optimization Consultant
+<br>
+
 ### Summary
 
 At my previous firm, my teammate and I worked on a process-improvement project for a distillery, focusing on optimizing their production scheduling process. We identified opportunities for automation, system integration, advanced optimization, and improved communication. We developed a customized process simulation using reinforcement learning to optimize equipment utilization while meeting scheduling constraints. Our solution saved the scheduling team significant time and improved equipment utilization rates by about 20%.
+
+### The Speed-Reader's 'So-What'
+This process-improvement project for a distillery demonstrates my strong analytical skills, innovation, and adaptability, which are crucial for success in more sustainable and environmentally friendly fields. My experience in optimizing production scheduling and equipment utilization using automation and reinforcement learning can be directly applied to promoting sustainable practices and reducing environmental impact.
+
+My effective communication and collaboration with diverse stakeholders, combined with my commitment to continuous learning, make me an ideal candidate for driving sustainability efforts. Overall, my process improvement and optimization skills enable me to contribute to innovative solutions in the sustainable industry for a greener future.
 
 ### Background
 

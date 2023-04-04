@@ -6,9 +6,14 @@ description: A brief description of your project.
 tags: ["Process Simulation", "Extra-Curricular"]
 ---
 
-### Summary:
+### Summary
 
 Finite Element Analysis (FEA) is a powerful computational method for simulating complex physical systems, such as shell and tube heat exchangers, by dividing them into smaller elements. By solving time-dependent governing equations and applying boundary conditions, FEA can model transient conditions and provide insights into temperature profiles, pressure drop, heat transfer rates, and potential hotspots or areas of high stress. I have sourced a CAD file for a shell-and-tube heat exchanger and developed mesh representations for the exchanger. As I make more progress, I will provide detailed updates and welcome any ideas for improving this strategy or generalizing it for wider applications in digital twin simulation technology.
+
+### The Speed-Reader's 'So-What'
+This project demonstrates my ability to tackle complex engineering challenges and optimize performance in critical systems. By modeling transient conditions and extracting valuable insights on temperature profiles, pressure drop, heat transfer rates, and potential stress points, this project highlights my proficiency in leveraging computational techniques to enhance the efficiency and reliability of thermal systems.
+
+Optimizing heat exchangers and other thermal systems plays a crucial role in reducing energy consumption, minimizing waste, and maximizing resource utilization. My experience with FEA allows me to contribute directly to these objectives by applying my skills to design, analyze, and optimize energy-efficient and eco-friendly solutions. Furthermore, my knowledge of digital twin simulation technology opens up opportunities for simulating and predicting the performance of sustainable systems in real-time, ensuring optimal operational strategies that minimize environmental impact.
 
 ### Introduction to Finite Element Analysis
 

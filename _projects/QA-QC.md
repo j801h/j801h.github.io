@@ -7,10 +7,15 @@ tags: ["Client Relationships", "Construction Management"]
 ---
 
 ### Role: Project QA/QC Co-Lead
+<br>
 
+### Summary
 At the height of the pandemic, I was tasked with joining the QA/QC effort on a large process expansion project, and quickly advanced to QA/QC co-lead, supervising a team of five engineers executing QA/QC work for all work performed on the project. This project was a top priority for my firm, as supply-chain issues put it at risk of entering a phase of liquidated damages (contract terms outlined pre-Covid). It was essential to complete work as quickly as possible and collaborate across teams as effectively as possible in order to productively advance the project.
 
+### The Speed-Reader's 'So-What'
+The significance of my role as QA/QC Co-Lead on this process expansion project demonstrates my ability to adapt and excel under pressure, as well as to collaborate effectively with diverse stakeholders to ensure project success. By applying these critical project management and quality assurance skills to your field, dear reader, I hope to contribute to the development of innovative, eco-conscious projects that prioritize both efficiency and environmental impact.
 
+My experience in managing complex projects, navigating supply-chain challenges, and ensuring quality across all project stages will be invaluable in driving sustainable solutions. The ability to coordinate effectively with various teams and maintain stringent quality standards is crucial to ensure the successful implementation of sustainable practices and technologies. My background in construction management, coupled with my expertise in QA/QC, positions me to make a significant impact by delivering high-quality, eco-conscious projects that align with industry goals and contribute to a greener, more sustainable future.
 
 ### Responsibilities and Achievements:
 

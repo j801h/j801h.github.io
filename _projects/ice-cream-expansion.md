@@ -8,8 +8,13 @@ tags: ["Construction Management", "Client Relationships"]
 
 
 ### Role: Construction Management Supervisor
+<br>
 
+### Summary
 During a major ice-cream facility expansion, I took on the role of Construction Management Supervisor to oversee the successful completion of the project. With a focus on safety, quality, and clear communication, I led the construction efforts, including the addition of five new production lines to increase the client's capacity.
+
+### The Speed-Reader's 'So-What'
+In my role as Construction Management Supervisor, I effectively oversaw a major ice-cream facility expansion, adding five new production lines and significantly increasing the client's production capacity. By prioritizing safety, quality, and clear communication, I managed mechanical, electrical, and controls construction, enforced Lockout-Tagout procedures, and ensured seamless integration of additional scope items. My success in this role demonstrates my ability to lead large-scale construction projects, maintain strong client relationships, and deliver results that contribute to the growth and efficiency of an organization. If you are here, this experience directly translates your field, as my skills in project management, stakeholder collaboration, and problem-solving are applicable to a wide range of industries and roles, ensuring my adaptability and effectiveness in new challenges.
 
 ### Responsibilities and Achievements:
 

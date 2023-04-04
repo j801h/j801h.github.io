@@ -8,6 +8,12 @@ tags: ["Extra-Curricular"]
 ### Summary
 I developed a Python script that utilized NLP techniques, specifically fuzzy matching, to navigate my previous firm's siloed network architecture and accumulate historical procurement data across 30 years of projects. This resulted in the creation of a comprehensive database containing over 250,000 line items, which improved decision-making, efficiency, collaboration, knowledge retention, and cost optimization. 
 
+### The Speed-Reader's 'So-What'
+The significance of this project goes beyond its immediate impact on my previous firm by improving decision-making, efficiency, collaboration, knowledge retention, and cost optimization. Leveraging NLP techniques and breaking down data silos showcases my ability to adapt, innovate, and optimize processes, all of which are essential for driving sustainable solutions in environmentally friendly industries.
+
+Data-driven decision-making and efficient resource utilization are crucial to minimize waste, reduce environmental impact, and maximize overall sustainability. The skills I developed while working on this project can be directly applied to these objectives. For example, by consolidating and analyzing historical procurement data, organizations can make informed choices about suppliers with strong environmental practices or materials with lower environmental footprints.
+
+Furthermore, the experience I gained from this project highlights my proactive approach to problem-solving and my commitment to continuous learning. In the fast-paced and ever-evolving sustainable industry, these qualities are invaluable as they enable professionals to stay ahead of the curve and identify new opportunities for innovation.
 
 ### Challenges of Data Accessibility
 

@@ -7,8 +7,17 @@ tags: ["Client Relationships", "Process Design"]
 ---
 
 ### Role: Junior Process Engineer
+<br>
 
+### Summary
 I had the opportunity to work alongside a senior process engineer in conducting a system bottleneck study for a nutritional beverage and supplements production facility. The highly manual nature of the system required thorough data collection and analysis to identify opportunities for optimization and process improvement.
+
+### The Speed-Reader's 'So-What'
+This project highlights my ability to identify and address inefficiencies in complex production systems, a skillset transferable to sustainable industries. By conducting a thorough bottleneck study, we improved the client's production process while reducing waste and resource consumption.
+
+My experience in data analysis, collaboration, and innovative problem-solving helps in areas in which identifying inefficiencies and implementing eco-friendly solutions is crucial.
+
+By leveraging my process engineering background and problem-solving skills, I can contribute to the development of environmentally friendly processes and technologies that promote waste reduction, minimize environmental impact, and drive sustainability across industries.
 
 ### Responsibilities and Achievements:
 
