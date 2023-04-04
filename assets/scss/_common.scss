@@ -533,3 +533,10 @@ li {
     font-size: 34px; /* Adjust this value to set the desired font size for mobile devices */
   }
 }
+
+.responsive-image {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

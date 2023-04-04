@@ -40,7 +40,15 @@ Applying appropriate time-stepping techniques, the simulation advances in small 
 After the simulation is complete, the results are analyzed to extract valuable insights such as temperature profiles, pressure drop, heat transfer rates, and potential hotspots or areas of high stress. Based on these findings, the heat exchanger's design can be optimized, operational issues can be addressed, and the impact of different operational scenarios on its performance and longevity can be assessed. This process showcases the versatility and usefulness of FEA in understanding and improving complex thermal systems like shell and tube heat exchangers, though it should be noted that it may be prohibitive to repeatedly generate new results from updated configurations, due to the difficulty of developing bespoke CAD representations based on simulation results.
 
 ### Progress-to-date
-So far, I have sourced an appropriate [CAD file for a shell-and-tube heat exchanger](https://grabcad.com/library/shell-and-tube-heat-exchanger-41) and performed necessary pre-processing steps to ensure accurate mesh dimensions (this model is approximately 3' in length, for some reason). Further, I have developed the mesh representations for the exchanger, shown here.
+So far, I have sourced an appropriate STL file for a shell-and-tube heat exchanger and performed necessary pre-processing steps to ensure accurate mesh dimensions:
+
+![HX Body](\assets\images\portfolio\HX\3d_exchanger_body.png){: .responsive-image}
+
+ Further, I have developed the mesh representations for the exchanger, shown here:
+
+![Hot Region](\assets\images\portfolio\HX\hot_region_mesh.png){: .responsive-image}
+![Cold Region](\assets\images\portfolio\HX\full_mesh.png){: .responsive-image}
+
 
 I will provide detailed updates as I make more progress. If you have any ideas for improving this strategy, please reach out! I would love to collaborate on this and ideas for generalizing this procedure as digital twin simulation tech becomes more accessible.
 
