@@ -3,7 +3,7 @@ layout: page
 title: Process Study and Proposal for Supplements Facility
 image: /assets/images/portfolio/item-7.png
 description: A brief description of your project.
-tags: ["Client Relationships", "Process Design"]
+tags: ["Client Relationships", "Process Design", "Team Efforts"]
 ---
 
 ### Role: Junior Process Engineer

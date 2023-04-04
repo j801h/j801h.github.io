@@ -3,7 +3,7 @@ layout: page
 title: Live Performance Analysis S&T Heat Exchanger 
 image: /assets/images/portfolio/item-3.png
 description: A brief description of your project.
-tags: ["Process Design"]
+tags: ["Process Design", "Team Efforts"]
 ---
 
 ### Role: Process Engineer Intern

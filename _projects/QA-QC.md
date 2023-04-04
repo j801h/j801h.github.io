@@ -3,7 +3,7 @@ layout: page
 title: Pet Food Process Expansion - QA / QC Co-Lead
 image: /assets/images/portfolio/item-4.png
 description: A brief description of your project.
-tags: ["Client Relationships", "Construction Management"]
+tags: ["Client Relationships", "Construction Management", "Team Efforts"]
 ---
 
 ### Role: Project QA/QC Co-Lead
