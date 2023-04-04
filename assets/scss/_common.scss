@@ -527,3 +527,9 @@ li {
   position: relative;
   display: inline-block;
 }
+/* Mobile styles */
+@media (max-width: 768px) {
+  .page-title-heading {
+    font-size: 34px; /* Adjust this value to set the desired font size for mobile devices */
+  }
+}

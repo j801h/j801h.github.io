@@ -29,3 +29,5 @@ By leveraging my process engineering background and problem-solving skills, I ca
 
 ### Results:
 Through close collaboration with the senior process engineer and meticulous data analysis, we successfully identified bottlenecks in the production process and proposed a solution that optimized the system. This experience enhanced my understanding of process engineering, data analysis, and effective problem-solving.
+
+If this description reminds you of a role that you are trying to fill, please do not hesitate to [reach out](/contact). I enjoy system studies and would love to contribute to yours! Also, please take a moment to review my [other recent work](/portfolio).

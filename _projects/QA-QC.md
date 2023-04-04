@@ -33,3 +33,5 @@ My experience in managing complex projects, navigating supply-chain challenges, 
 ### Results:
 
 Through our team's consistent efforts and the efficient application of CxAlloy, we successfully expanded the pet food factory process, doubling its capacity. By actively engaging with stakeholders and maintaining a focus on quality, we secured the project's success. This project offered valuable experience in project management, quality assurance, and stakeholder collaboration.
+
+If this description reminds you of a role that you are trying to fill, please do not hesitate to [reach out](/contact) to discuss a potential collaboration. Also, if you have not already done so, please take a moment to review my [other recent work](/portfolio).
