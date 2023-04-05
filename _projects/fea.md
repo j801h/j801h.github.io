@@ -49,6 +49,71 @@ So far, I have sourced an appropriate STL file for a shell-and-tube heat exchang
 ![Hot Region](\assets\images\portfolio\HX\hot_region_mesh.png){: .responsive-image}
 ![Cold Region](\assets\images\portfolio\HX\full_mesh.png){: .responsive-image}
 
+The FEA will utilize openFOAM according to the following pseudocode:
+
+```python
+import os
+from PyFoam.RunDictionary.ParsedParameterFile import ParsedParameterFile
+from PyFoam.Execution.BasicRunner import BasicRunner
+
+# Set up OpenFOAM case directory
+setup_case_directory()
+
+# Convert mesh to OpenFOAM format
+convert_mesh("path/to/mesh/file")
+
+# Set up OpenFOAM simulation
+solver = "buoyantSimpleFoam"  # or "buoyantPimpleFoam"
+configure_solver_settings(solver)
+
+# Run OpenFOAM simulation using PyFoam
+case = "path/to/case/directory"
+runner = BasicRunner(argv=[solver, "-case", case], silent=True)
+state = runner.start()
+
+# Post-process the results
+temperature, velocity, pressure = extract_fields()
+heat_transfer_rate = calculate_heat_transfer_rate(temperature)
+effectiveness = calculate_effectiveness(heat_transfer_rate)
+visualize_results(temperature, velocity, pressure)
+
+
+# Define design parameter values to be tested
+tube_diameters = [...]  # List of tube diameters to test
+baffle_spacings = [...]  # List of baffle spacings to test
+baffle_cuts = [...]  # List of baffle cut percentages to test
+
+# Perform parametric study for each combination of design parameters
+for tube_diameter in tube_diameters:
+    for baffle_spacing in baffle_spacings:
+        for baffle_cut in baffle_cuts:
+            # Modify the case directory with the new design parameter values
+            update_case_directory(tube_diameter, baffle_spacing, baffle_cut)
+
+            # Convert mesh to OpenFOAM format
+            convert_mesh("path/to/mesh/file")
+
+            # Set up OpenFOAM simulation
+            solver = "buoyantSimpleFoam"  # or "buoyantPimpleFoam"
+            configure_solver_settings(solver)
+
+            # Run OpenFOAM simulation using PyFoam
+            case = "path/to/case/directory"
+            runner = BasicRunner(argv=[solver, "-case", case], silent=True)
+            state = runner.start()
+
+            # Post-process the results
+            temperature, velocity, pressure = extract_fields()
+            heat_transfer_rate = calculate_heat_transfer_rate(temperature)
+            effectiveness = calculate_effectiveness(heat_transfer_rate)
+            visualize_results(temperature, velocity, pressure)
+
+            # Log or store the results
+            log_results(tube_diameter, baffle_spacing, baffle_cut, heat_transfer_rate, effectiveness)
+
+```
+
+
 I will provide detailed updates as I make more progress. If you have any ideas for improving this strategy, please reach out! I would love to collaborate on this and ideas for generalizing this procedure as digital twin simulation tech becomes more accessible.
 
 If any of these projects sound pertinent to a role you are trying to fill, please consider [reaching out](/contact), or feel free to browse my [other recent projects](/portfolio).
