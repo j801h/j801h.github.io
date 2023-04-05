@@ -47,6 +47,9 @@ So far, I have sourced an appropriate STL file for a shell-and-tube heat exchang
  Further, I have developed the mesh representations for the exchanger, shown here:
 
 ![Hot Region](\assets\images\portfolio\HX\hot_region_mesh.png){: .responsive-image}
+
+<br>
+
 ![Cold Region](\assets\images\portfolio\HX\full_mesh.png){: .responsive-image}
 
 Before diving into transient flow modeling, I decided to check the viability of the meshes using a steady-state approach, with hot and cold water on the tube and shell-sides, respectively.
