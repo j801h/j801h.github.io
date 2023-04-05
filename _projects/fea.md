@@ -49,6 +49,24 @@ So far, I have sourced an appropriate STL file for a shell-and-tube heat exchang
 ![Hot Region](\assets\images\portfolio\HX\hot_region_mesh.png){: .responsive-image}
 ![Cold Region](\assets\images\portfolio\HX\full_mesh.png){: .responsive-image}
 
+Before diving into transient flow modeling, I decided to check the viability of the meshes using a steady-state approach, with hot and cold water on the tube and shell-sides, respectively.
+
+Using SimFlow to pre-experiment with steady-state conditions, and ParaView for data visualization, I got the following results:
+
+![Residuals](\assets\images\portfolio\HX\residuals.png){: .responsive-image}
+
+Where residuals refer to the difference between the calculated value of a variable and its expected value based on its governing equations.
+
+![Velocity](\assets\images\portfolio\HX\velocity.png){: .responsive-image}
+
+Where 'U' represents fluid velocity, and points are colored based on fluid velocity profile.
+
+Unfortunately, the SimFlow output files seem to have a compilation error that makes the temperature data unreadable, so I will be troubleshooting that next.
+
+
+
+### Transient Flow Case
+
 The FEA will utilize openFOAM according to the following pseudocode:
 
 ```python
