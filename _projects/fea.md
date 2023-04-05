@@ -55,6 +55,7 @@ The FEA will utilize openFOAM according to the following pseudocode:
 import os
 from PyFoam.RunDictionary.ParsedParameterFile import ParsedParameterFile
 from PyFoam.Execution.BasicRunner import BasicRunner
+from paraview import paraview.simple
 
 # Set up OpenFOAM case directory
 setup_case_directory()
@@ -110,6 +111,34 @@ for tube_diameter in tube_diameters:
 
             # Log or store the results
             log_results(tube_diameter, baffle_spacing, baffle_cut, heat_transfer_rate, effectiveness)
+
+# Load OpenFOAM case
+case_path = "path/to/case/file.foam"
+reader = pvs.OpenFOAMReader(FileName=case_path)
+reader.UpdatePipeline()
+
+# Create a temperature filter
+temperature_filter = pvs.CellDatatoPointData(Input=reader)
+temperature_filter.CellDataArraytoprocess = 'T'  # Replace 'T' with the name of your temperature field
+
+# Create a color map for temperature
+color_map = pvs.CreateLookupTable(ScalarRange=[min_temp, max_temp])
+color_map.ColorSpace = 'Diverging'
+
+# Set up a rendering view
+render_view = pvs.GetActiveViewOrCreate('RenderView')
+render_view.Background = [1, 1, 1]  # Set background color to white
+
+# Set up the visualization pipeline
+temperature_display = pvs.Show(temperature_filter, render_view)
+temperature_display.ColorArrayName = ['POINTS', 'T']  # Replace 'T' with the name of your temperature field
+temperature_display.LookupTable = color_map
+
+# Render the visualization
+pvs.Render(render_view)
+
+# Save the visualization as an image
+pvs.SaveScreenshot("path/to/output/image.png", render_view)
 
 ```
 
