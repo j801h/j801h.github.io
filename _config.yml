@@ -37,6 +37,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
+  positions:
+    output: true
+
 
 highlighter: rouge
 markdown: kramdown
@@ -44,11 +47,11 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-collections:
-  positions:
-     output: true
+# collections:
+#   positions:
+#      output: true
 
-collections:
-  projects:
-     output: true
+# collections:
+#   projects:
+#      output: true
 
