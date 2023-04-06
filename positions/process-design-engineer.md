@@ -14,9 +14,9 @@ title: Process Design Engineer
 <br>
 
 ### Summary
-Leveraging my experience as a Process Design Engineer at Dennis Group, I bring a strong foundation in engineering principles, project management, and industry best practices to develop innovative solutions for sustainability and environmental stewardship. My background in food and beverage process design equips me to address industry challenges and opportunities with eco-conscious strategies and technologies.
+During my time as a Process Design Engineer at Dennis Group, I had the privilege of working on various food and beverage production processes, using my engineering knowledge and creativity to devise high-quality solutions for clients. My role involved understanding client needs, optimizing process designs, specifying equipment, creating P&IDs, managing projects, ensuring compliance with quality and safety standards, and offering technical support.
 
-As I transition into a more sustainable and environmentally friendly field, I am excited to combine my passion for environmental sustainability with my engineering skills and industry experience to drive positive change. I look forward to playing a pivotal role in shaping the future of the industry, demonstrating that it is possible to achieve both operational excellence and environmental responsibility in pursuit of a greener, more sustainable world. If you have a role to fill fitting this description, please do not hesitate to reach out.
+My experience has provided me with a solid foundation in the food and beverage industry, and I am eager to apply my skills and passion for environmental stewardship in a more sustainable sector. I am excited to contribute to projects that promote sustainability and foster a greener future.
 
 ### Responsibilities
 As a Process Design Engineer at Dennis Group, I had the opportunity to consult on food and beverage production processes, providing design-build services across a range of process types. My role allowed me to leverage my engineering expertise and creativity to develop innovative solutions for clients, ultimately enhancing their production efficiency and product quality. My main responsibilities during my time at Dennis Group included:

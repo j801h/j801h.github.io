@@ -10,10 +10,10 @@ title: Assistant Researcher - Neuroscience
 <br>
 
 ### Summary
-My background as a Neuroscience Assistant Researcher at Auburn University provided me with strong research, experimental design, and data analysis skills, which are vital for driving innovation in sustainable and environmentally friendly fields. I will apply these skills to develop eco-conscious processes that minimize environmental impact and promote resource conservation. Leveraging my research expertise and passion for sustainability, I am well-prepared to contribute to data-driven, green solutions that foster a more sustainable future.
+My background as a Neuroscience Assistant Researcher at Auburn University provided me with strong research, experimental design, and data analysis skills, which are vital for driving innovation in sustainable and environmentally friendly fields. I will apply these skills to develop eco-conscious processes that minimize environmental impact and promote resource conservation. Leveraging my research expertise and passion for sustainability, I am well-prepared to contribute to data-driven, sustainable solutions.
 
 ### Role Description
-During my tenure as a Neuroscience Assistant Researcher at the Harrison School of Pharmacy, I had the privilege of working alongside a team of dedicated graduate researchers and professors to study novel therapeutics targeting Alzheimer's and Parkinson's disease. My experience in this role provided me with invaluable exposure to cutting-edge research methods and techniques, while contributing to the development of potential treatments for neurodegenerative disorders. My primary responsibilities included:
+During my tenure as a Neuroscience Assistant Researcher at the Harrison School of Pharmacy, I had the privilege of working alongside a team of dedicated graduate researchers and professors to study novel therapeutics targeting Alzheimer's and Parkinson's disease. My experience in this role provided me with invaluable exposure to high-quality research methods and techniques, while contributing to the development of potential treatments for neurodegenerative disorders. My primary responsibilities included:
 
 - Research Support: Assisted graduate researchers and professors in conducting experiments and analyzing data, ensuring the efficient progress of projects and the accuracy of experimental results.
 

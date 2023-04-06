@@ -10,9 +10,9 @@ title: Process Engineer Intern
 <br>
 
 ### Summary
-My experience as a Process Engineer Co-op at the Mosaic Company, where I honed skills in process analysis, optimization, and continuous improvement, positions me well for a transition into a green industry. By applying my expertise in identifying inefficiencies, reducing waste, and collaborating with cross-functional teams, I can contribute to the development and success of eco-conscious projects.
+As a Process Engineer Co-op at Mosaic Company, I had the chance to apply my academic knowledge and gain a deep understanding of the industrial environment. I worked with a diverse team to optimize processes, improve efficiency, and achieve sustainable growth. My main tasks included process analysis, root cause analysis, continuous improvement, technical documentation, cross-functional collaboration, and project management.
 
-My hands-on experience and refined problem-solving skills will be invaluable in promoting sustainable growth and minimizing environmental impact. I look forward to leveraging these skills to drive positive change for a greener, more sustainable future.
+During my time at Mosaic, I honed my problem-solving, communication, and analytical skills, which have significantly impacted my career as a process engineer. I am excited to use these skills to drive positive change and contribute to the success of future endeavors.
 
 ### Role Description
 As a Process Engineer Co-op at the Mosaic Company, I had the opportunity to apply my academic background and develop a deep understanding of the industrial environment. I worked closely with a diverse team of professionals to optimize processes, improve efficiency, and achieve sustainable growth. My main responsibilities during my time at Mosaic included:
