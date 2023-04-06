@@ -548,3 +548,11 @@ li {
   transform: scale(1.25);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
+
+
+@media (max-width: 768px) {
+  .responsive-image:hover {
+    transform: scale(2);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  }
