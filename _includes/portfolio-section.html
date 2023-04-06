@@ -1,5 +1,4 @@
 {% if site.projects %}
-
 <!-- resume download -->
 <div class="resume-download container">
   <div class="download-btn-wrapper">
@@ -9,34 +8,42 @@
   </div>
 </div>
 
-<!-- portfolio -->
-<section class="section"  id="portfolio">
+<!-- portfolio highlights -->
+<section class="section"  id="portfolio-highlights">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Portfolio</h2>
+        <h2 class="section-title">Portfolio Highlights</h2>
       </div>
     </div>
     <div class="row shuffle-wrapper">
       {% for project in site.projects %}
-      <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4 shuffle-item"> <!-- Adjusted column classes here -->
-        <div class="position-relative rounded hover-wrapper">
-          <img src="{{ site.baseurl }}{{ project.image }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="{{ site.baseurl }}{{ project.url }}">view project</a>
+        {% if project.highlight %}
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img src="{{ site.baseurl }}{{ project.image }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="{{ site.baseurl }}{{ project.url }}">view project</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-title text-center" style="margin-top: 10px;">
+              <h5>{{ project.title }}</h5>
             </div>
           </div>
-        </div>
-        <div class="portfolio-title text-center" style="margin-top: 10px;"> <!-- Added custom margin here -->
-          <h5>{{ project.title }}</h5>
-        </div>
-      </div>
+        {% endif %}
       {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="/portfolio" class="btn btn-primary">View Full Portfolio</a>
+      </div>
     </div>
   </div>
 </section>
-<!-- /portfolio -->
+<!-- /portfolio highlights -->
 {% endif %}
+
 
 

@@ -4,6 +4,7 @@ title: Finite Element Analysis S&T Heat Exchanger (ongoing)
 image: /assets/images/portfolio/item-5.png
 description: A brief description of your project.
 tags: ["Process Simulation", "Extra-Curricular", "Team Efforts"]
+highlight: True
 ---
 
 ### Summary
