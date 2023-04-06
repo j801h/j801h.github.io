@@ -14,18 +14,19 @@ tags: ["Process Design", "Team Efforts"]
 In this project, I conducted an in-depth performance analysis of a shell-and-tube heat exchanger at a fertilizer production plant. The goal was to evaluate the heat exchanger's current performance against its theoretical and historical performance data, ultimately determining the need for maintenance due to fouling.
 
 ### The Speed-Reader's 'So-What'
-During my role as a Process Engineer Intern, I successfully analyzed the performance of a shell-and-tube heat exchanger at a fertilizer production plant, revealing significant fouling issues that required maintenance. By comparing theoretical, historical, and current performance data, I identified a decline in heat exchanger efficiency and the need for immediate action. My proactive approach led to a 33% improvement in the heat exchanger's effectiveness, optimizing plant operations, reducing energy costs, and preventing potential equipment failure. This experience showcases my ability to identify and address performance issues in critical industrial processes and contribute to the overall efficiency and sustainability of operations.
+As a Process Engineer Intern, I was tasked with analyzing a shell-and-tube heat exchanger at a fertilizer production plant. In doing so, I discovered notable fouling issues that necessitated maintenance. By systematically comparing theoretical, historical, and current performance data, I recognized a decrease in the heat exchanger's efficiency and the importance of prompt intervention.
+
+By taking a proactive approach, I contributed to a 33% increase in the heat exchanger's effectiveness. This improvement optimized plant operations, reduced energy costs, and mitigated the risk of equipment failure. This work demonstrates my ability to identify and address performance concerns in essential industrial processes, ultimately supporting the overall efficiency and sustainability of operations.
 
 ### Background
 
 - Shell-and-tube heat exchangers are critical components in many industrial processes, including fertilizer production
 - Fouling is a common issue that can lead to decreased efficiency, higher operational costs, and potential equipment failure
-- Understanding the performance of heat exchangers is essential for optimizing plant operations and minimizing downtime
 
 ### Data Collection
 
 - Collected historical performance data of the heat exchanger and surrounding series of evaporators, including flow rates, temperatures, and pressure drops
-- Calculated design specifications for entire evaporation process and theoretical performance data for comparison
+- Calculated design specifications for the surrounding multi-effect evaporation process and theoretical performance data for comparison
 
 ### Thermodynamic Analysis
 - Used thermodynamic principles to calculate the heat transfer coefficients and effectiveness of the heat exchanger
@@ -38,7 +39,7 @@ Used regression analysis to determine the relationship between various parameter
 ### Results
 
 - Identified a significant decline in heat exchanger performance (it was operating at 60% of its designed load), indicating fouling issues
-Heat transfer coefficients and effectiveness values were considerably lower than theoretical and historical values
+- Heat transfer coefficients and effectiveness values were considerably lower than theoretical and historical values
 - Statistical analysis revealed a strong correlation between fouling and decreased heat transfer efficiency
 
 ### Conclusion

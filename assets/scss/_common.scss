@@ -183,7 +183,7 @@ a:hover {
 }
 
 .rounded-lg{
-  border-radius: 15px;
+  border-radius: 4px;
 }
 
 .overflow-hidden {
@@ -285,6 +285,11 @@ textarea.form-control{
   width: 120px;
   height: auto;
 }
+
+.border-thick {
+  border: 4px solid white !important;
+}
+
 
 
 .hero-image {
@@ -556,3 +561,38 @@ li {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   }
   }
+
+
+
+
+  .custom-table table {
+    border-collapse: collapse;
+    max-width: 90%;
+    margin: 0 auto;
+    transition: max-width 0.3s ease; /* Add a smooth transition for expanding the table */
+  }
+  
+  .custom-table table:hover {
+    max-width: 150%; /* Set the desired expanded size on hover */
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .custom-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .custom-table tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  .custom-table tr:hover {
+    background-color: #e0e0e0;
+  }
+  
