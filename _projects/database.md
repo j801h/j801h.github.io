@@ -9,7 +9,7 @@ highlight: True
 ### Summary
 I developed a Python script that utilized NLP techniques, specifically fuzzy matching, to navigate my previous firm's siloed network architecture and accumulate historical procurement data across 30 years of projects. This resulted in the creation of a comprehensive database containing over 250,000 line items, which improved decision-making, efficiency, collaboration, knowledge retention, and cost optimization. 
 
-### The Speed-Reader's 'So-What'
+### The Quick Take-Away
 The significance of this project goes beyond its immediate impact on my previous firm, as it has enhanced decision-making, efficiency, collaboration, knowledge retention, and cost optimization. By utilizing NLP techniques and dismantling data barriers, I have demonstrated my capacity to adapt, innovate, and refine processes, all crucial for fostering enduring, eco-friendly solutions.
 
 My experience with data-driven decision-making and effective resource management is essential for minimizing waste and avoiding duplication of efforts. The skills I honed during this project are directly applicable to these goals.
@@ -20,25 +20,25 @@ Furthermore, this project highlights my proactive approach to problem-solving an
 
 Organizations often face significant challenges when their previous project data is inaccessible, which can negatively impact decision-making, productivity, and competitiveness. Key obstacles include:
 
-- Loss of institutional knowledge: Inaccessible data can lead to loss of valuable insights and experiences, hindering future progress and innovation.
+- __Loss of institutional knowledge__: Inaccessible data can lead to loss of valuable insights and experiences, hindering future progress and innovation.
 
-- Hindered decision-making: Limited access to historical data can impede informed decision-making, making it difficult to predict outcomes or draw comparisons.
+- __Hindered decision-making__: Limited access to historical data can impede informed decision-making, making it difficult to predict outcomes or draw comparisons.
 
-- Reduced efficiency: The inability to reference or reuse previous work can lead to duplicate efforts and wasted resources.
+- __Reduced efficiency__: The inability to reference or reuse previous work can lead to duplicate efforts and wasted resources.
 
 ### Natural Language Processing as a Solution
 
 Natural Language Processing (NLP) has the potential to significantly mitigate the issues caused by inaccessible data within organizations by enabling more efficient and effective access to internal network resources. Here are several ways NLP can help:
 
-- Improved search and retrieval: NLP can enhance search functionality by understanding the context and semantics of user queries, making it easier to locate relevant documents, emails, or other resources within the internal network.
+- __Improved search and retrieval__: NLP can enhance search functionality by understanding the context and semantics of user queries, making it easier to locate relevant documents, emails, or other resources within the internal network.
 
-- Automatic categorization and tagging: NLP can automatically categorize and tag internal documents, facilitating better organization and making it easier for employees to find the information they need.
+- __Automatic categorization and tagging__: NLP can automatically categorize and tag internal documents, facilitating better organization and making it easier for employees to find the information they need.
 
-- Knowledge extraction and summarization: NLP can extract key information from large volumes of data, distilling it into concise summaries, which can aid in decision-making and problem-solving.
+- __Knowledge extraction and summarization__: NLP can extract key information from large volumes of data, distilling it into concise summaries, which can aid in decision-making and problem-solving.
 
-- Enhanced collaboration: NLP can facilitate cross-functional collaboration by helping employees locate relevant colleagues and their work, fostering knowledge sharing and reducing duplication of efforts.
+- __Enhanced collaboration__: NLP can facilitate cross-functional collaboration by helping employees locate relevant colleagues and their work, fostering knowledge sharing and reducing duplication of efforts.
 
-- Trend and pattern recognition: NLP can analyze historical data to identify patterns and trends, providing valuable insights that can inform future strategies and initiatives.
+- __Trend and pattern recognition__: NLP can analyze historical data to identify patterns and trends, providing valuable insights that can inform future strategies and initiatives.
 
 By implementing NLP solutions for internal network resources, organizations can unlock the full potential of their historical data, enhancing decision-making, collaboration, and overall competitiveness.
 
@@ -131,15 +131,15 @@ all_data.to_csv("all_procurement_data.csv", index=False)
 
 This simple concept was used to accumulate 250,000+ line items for equipment procured and services provided over the firm's lifespan. Some advantages:
 
-- Enhanced decision-making: Access to a comprehensive database of procurement data enables better-informed decisions, as employees can now analyze past trends, supplier performance, and pricing patterns to optimize procurement strategies.
+- __Enhanced decision-making__: Access to a comprehensive database of procurement data enables better-informed decisions, as employees can now analyze past trends, supplier performance, and pricing patterns to optimize procurement strategies.
 
-- Increased efficiency: Centralizing procurement data eliminates redundant efforts and wasted resources, as employees no longer need to search multiple data silos to find relevant information. This streamlines workflows and saves time.
+- __Increased efficiency__: Centralizing procurement data eliminates redundant efforts and wasted resources, as employees no longer need to search multiple data silos to find relevant information. This streamlines workflows and saves time.
 
-- Improved collaboration: Breaking down data silos fosters cross-functional collaboration, as employees can easily access and share procurement insights across teams. This leads to better decision-making and more innovative solutions.
+- __Improved collaboration__: Breaking down data silos fosters cross-functional collaboration, as employees can easily access and share procurement insights across teams. This leads to better decision-making and more innovative solutions.
 
-- Knowledge retention: By consolidating historical procurement data, institutional knowledge is preserved, allowing employees to learn from past experiences and apply them to current and future projects.
+- __Knowledge retention__: By consolidating historical procurement data, institutional knowledge is preserved, allowing employees to learn from past experiences and apply them to current and future projects.
 
-- Cost optimization: Access to historical pricing and supplier performance data enables better negotiation and vendor selection, potentially leading to cost savings and improved supplier relationships.
+- __Cost optimization__: Access to historical pricing and supplier performance data enables better negotiation and vendor selection, potentially leading to cost savings and improved supplier relationships.
 
 
 More impressive tools exist today for accomplishing tasks like this ([see: GPT-4 w/ Pinecone embeddings](https://www.youtube.com/watch?v=ih9PBGVVOO4)), but when considered in its context two years ago, I think this project effectively demonstrates my commitment to adopting and leveraging new technologies in order to empower myself and others.
