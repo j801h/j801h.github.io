@@ -76,17 +76,25 @@ Unfortunately, the SimFlow output files seem to have a compilation error that ma
 
 ### Transient Flow Case
 
-Because openFOAM comes with several tutorials for using its various solvers, I have decided to work with those and adapt them to suit the heat exchanger problem, rather than building the repository from scratch. The pisoFoam solver source code contains an example repo that models a 2D incompressible flow simulation using the Reynolds-Averaged Navier-Stokes (RANS) equations with a turbulence model. The specific geometry used in this example is a square cavity with a moving lid. The top lid of the cavity is sliding horizontally with a constant velocity, while the other three sides are stationary. After running this simulation, I was able to develop the following animation using ParaView:
+Because openFOAM comes with several tutorials for using its various solvers, I have decided to work with those and adapt them to suit the heat exchanger problem, rather than building the repository from scratch. The pisoFoam solver within openFOAM uses the PISO (Pressure-Implicit with Splitting of Operators) algorithm to decouple the pressure and velocity fields in the momentum equation, allowing for an efficient and stable solution of the incompressible Navier-Stokes equations. Additionally, pisoFoam can handle turbulence modeling by incorporating various turbulence models, such as k-epsilon, k-omega, or large-eddy simulation (LES), to account for the effects of turbulence on the fluid flow. The pisoFoam solver source code contains an example repo that models a ball valve system that consists of a pipe with a ball valve in the middle, which regulates the flow of fluid through the pipe. This example showcases a FEA solution of the incompressible Navier-Stokes equations for transient conditions in three dimensions. After running this simulation, I was able to develop the following animation using ParaView:
 
 <br>
 
-<video autoplay loop muted playsinline style="width: 60%; max-width: 600%; display: block; margin: 0 auto;">  <source src="/assets/images/portfolio/5fps.ogv" type="video/ogg">
+{% raw %}
+<video autoplay loop muted playsinline style="width: 80%; max-width: 80%; display: block; margin: 0 auto;">
+  <source src="/assets/videos/ballvalve10fps.mp4" type="video/mp4">
+  <source src="/assets/videos/ballvalve10fps.webm" type="video/webm">
+  <source src="/assets/videos/ballvalve10fps.ogv" type="video/ogg">
   Your browser does not support the video tag.
 </video>
+{% endraw %}
 
 <br>
 
-This confirms that I can simulate transient flow in two dimensions; next, I will run and animate a 3-D example and hopefully will be able to adapt those simulation conditions to the HX.
+
+Note that the pisoFoam solver does not incorporate temperature values into its solutions, but there are other solvers available within the openFOAM library that can use pisoFoam's **outputs as inputs** for modeling temperature effects on flow. I will be working on that next.
+
+This confirms that I can simulate transient flow in three dimensions; next, I will confirm that these flow data can be analyzed to create realistic temperature data using the scalarTransportFoam.
 
 <br>
 
