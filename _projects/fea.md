@@ -96,6 +96,8 @@ Note that the pisoFoam solver does not incorporate temperature values into its s
 
 These simulation results confirm that I can simulate transient flow in three dimensions; next, I will confirm that these flow data can be analyzed to create realistic temperature data using the scalarTransportFoam solver within openFOAM's source code.
 
+ALso note that the results of this workflow will not be able to incorporate bouyant forces into a given flow regime, as flow profiles are determined solely using the navier-stokes equations.
+
 <br>
 
 I will provide detailed updates as I make more progress. If you have any ideas for improving this strategy, please reach out! I would love to collaborate on this and ideas for generalizing this procedure as digital twin simulation tech becomes more accessible.
