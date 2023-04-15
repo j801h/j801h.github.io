@@ -76,7 +76,17 @@ Unfortunately, the SimFlow output files seem to have a compilation error that ma
 
 ### Transient Flow Case
 
-TBA!
+Because openFOAM comes with several tutorials for using its various solvers, I have decided to work with those and adapt them to suit the heat exchanger problem, rather than building the repository from scratch. The pisoFoam solver source code contains an example repo that models a 2D incompressible flow simulation using the Reynolds-Averaged Navier-Stokes (RANS) equations with a turbulence model. The specific geometry used in this example is a square cavity with a moving lid. The top lid of the cavity is sliding horizontally with a constant velocity, while the other three sides are stationary. After running this simulation, I was able to develop the following animation using ParaView:
+
+<br>
+
+<video autoplay loop muted playsinline style="width: 60%; max-width: 600%; display: block; margin: 0 auto;">  <source src="/assets/images/portfolio/5fps.ogv" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<br>
+
+This confirms that I can simulate transient flow in two dimensions; next, I will run and animate a 3-D example and hopefully will be able to adapt those simulation conditions to the HX.
 
 <br>
 
