@@ -102,13 +102,23 @@ Because openFOAM comes with several tutorials for using its various solvers, I h
 <video class="responsive-video" autoplay loop muted playsinline>
   <source src="/assets/videos/ballvalve10fps.mp4" type="video/mp4">
   <source src="/assets/videos/ballvalve10fps.webm" type="video/webm">
-  <source src="/assets/videos/ballvalve10fps.ogv" type="video/ogg">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
 
 <br>
+<br>
+**and again, doubling the inlet pressure:**
+<br>
+<br>
 
+{% raw %}
+<video class="responsive-video" autoplay loop muted playsinline>
+  <source src="/assets/videos/ballvalve20pa10fps.mp4" type="video/mp4">
+  <source src="/assets/videos/ballvalve20pa10fps.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+{% endraw %}
 
 
 Note that the pisoFoam solver does not incorporate temperature values into its solutions, but there are other solvers available within the openFOAM library that can use pisoFoam's **outputs as inputs** for modeling temperature effects on flow. Also note that the results of this workflow will not be able to incorporate bouyant forces into a given flow regime, as flow profiles are determined solely using the idealized Navier-Stokes equations.
