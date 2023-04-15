@@ -596,3 +596,37 @@ li {
     background-color: #e0e0e0;
   }
   
+
+  .responsive-video {
+    width: 80%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 767px) {
+    .responsive-video {
+      width: 100%;
+    }
+  }
+
+
+  .responsive-video-header {
+    width: 60%;
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 767px) {
+    .responsive-video {
+      width: 100%;
+    }
+  }
+  

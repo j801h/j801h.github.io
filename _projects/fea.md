@@ -7,16 +7,16 @@ tags: ["Process Simulation", "Extra-Curricular", "Team Efforts"]
 highlight: True
 ---
 
-<br>
 
 {% raw %}
-<video autoplay loop muted playsinline style="width: 50%; max-width: 50%; display: block; margin: 0 auto;">
+<video class="responsive-video-header" autoplay loop muted playsinline>
   <source src="/assets/videos/ballvalve10fps.mp4" type="video/mp4">
   <source src="/assets/videos/ballvalve10fps.webm" type="video/webm">
   <source src="/assets/videos/ballvalve10fps.ogv" type="video/ogg">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
+
 <center><span style="font-size: 16px;">transient 3D flow through ball valve, built with openFOAM and ParaView</span></center>
 
 
@@ -25,7 +25,7 @@ highlight: True
 
 ### Summary
 
-Finite Element Analysis (FEA) is a powerful computational method for simulating complex physical systems, such as heat exchangers, by dividing them into smaller elements. By solving time-dependent governing equations and applying boundary conditions, FEA can model transient conditions and provide insights into temperature profiles, pressure drop, heat transfer rates, and potential hotspots or areas of high stress. 
+Finite Element Analysis (FEA) is a powerful computational method for simulating complex physical systems, such as heat exchangers (or ball valves), by dividing them into smaller elements. By solving time-dependent governing equations and applying boundary conditions, FEA can model transient conditions and provide insights into temperature profiles, pressure drop, heat transfer rates, and potential hotspots or areas of high stress. 
 
 To that end, I have sourced a CAD file for a shell-and-tube heat exchanger, developed mesh representations for the exchanger's flow regions, and have simulated and visualized a steady-state flow condition for the exchanger. My ultimate goal here is to develop a generalized workflow for converting CAD files and process constraints into high-fidelity models of transient process behaviors. 
 
@@ -99,7 +99,7 @@ Because openFOAM comes with several tutorials for using its various solvers, I h
 <br>
 
 {% raw %}
-<video autoplay loop muted playsinline style="width: 80%; max-width: 80%; display: block; margin: 0 auto;">
+<video class="responsive-video" autoplay loop muted playsinline>
   <source src="/assets/videos/ballvalve10fps.mp4" type="video/mp4">
   <source src="/assets/videos/ballvalve10fps.webm" type="video/webm">
   <source src="/assets/videos/ballvalve10fps.ogv" type="video/ogg">
@@ -108,6 +108,7 @@ Because openFOAM comes with several tutorials for using its various solvers, I h
 {% endraw %}
 
 <br>
+
 
 
 Note that the pisoFoam solver does not incorporate temperature values into its solutions, but there are other solvers available within the openFOAM library that can use pisoFoam's **outputs as inputs** for modeling temperature effects on flow. Also note that the results of this workflow will not be able to incorporate bouyant forces into a given flow regime, as flow profiles are determined solely using the idealized Navier-Stokes equations.
