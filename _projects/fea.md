@@ -73,6 +73,8 @@ Where 'U' represents fluid velocity, and points are colored based on fluid veloc
 
 Unfortunately, the SimFlow output files seem to have a compilation error that makes the temperature data unreadable, so I will be troubleshooting that next.
 
+*minor update here: because openFOAM is designed for Linux systems, I think the temperature data I generated on my Windows machine was corrupted due to compatibility issues. I have created an ubuntu partition on my machine that is more compatible with openFOAM outputs, and have had better results (see below). If I have time, I will regenerate these results on Ubuntu to get accurate temperature data.
+
 
 ### Transient Flow Case
 
@@ -92,11 +94,10 @@ Because openFOAM comes with several tutorials for using its various solvers, I h
 <br>
 
 
-Note that the pisoFoam solver does not incorporate temperature values into its solutions, but there are other solvers available within the openFOAM library that can use pisoFoam's **outputs as inputs** for modeling temperature effects on flow.
+Note that the pisoFoam solver does not incorporate temperature values into its solutions, but there are other solvers available within the openFOAM library that can use pisoFoam's **outputs as inputs** for modeling temperature effects on flow. Also note that the results of this workflow will not be able to incorporate bouyant forces into a given flow regime, as flow profiles are determined solely using the Navier-Stokes equations.
 
 These simulation results confirm that I can simulate transient flow in three dimensions; next, I will confirm that these flow data can be analyzed to create realistic temperature data using the scalarTransportFoam solver within openFOAM's source code.
 
-ALso note that the results of this workflow will not be able to incorporate bouyant forces into a given flow regime, as flow profiles are determined solely using the navier-stokes equations.
 
 <br>
 
