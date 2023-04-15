@@ -7,6 +7,22 @@ tags: ["Process Simulation", "Extra-Curricular", "Team Efforts"]
 highlight: True
 ---
 
+<br>
+
+{% raw %}
+<video autoplay loop muted playsinline style="width: 50%; max-width: 50%; display: block; margin: 0 auto;">
+  <source src="/assets/videos/ballvalve10fps.mp4" type="video/mp4">
+  <source src="/assets/videos/ballvalve10fps.webm" type="video/webm">
+  <source src="/assets/videos/ballvalve10fps.ogv" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+{% endraw %}
+<center><span style="font-size: 16px;">transient 3D flow, built with openFOAM and ParaView</span></center>
+
+
+
+<br>
+
 ### Summary
 
 Finite Element Analysis (FEA) is a powerful computational method for simulating complex physical systems, such as heat exchangers, by dividing them into smaller elements. By solving time-dependent governing equations and applying boundary conditions, FEA can model transient conditions and provide insights into temperature profiles, pressure drop, heat transfer rates, and potential hotspots or areas of high stress. 
