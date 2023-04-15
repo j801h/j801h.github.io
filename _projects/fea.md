@@ -17,7 +17,7 @@ highlight: True
   Your browser does not support the video tag.
 </video>
 {% endraw %}
-<center><span style="font-size: 16px;">transient 3D flow, built with openFOAM and ParaView</span></center>
+<center><span style="font-size: 16px;">transient 3D flow through ball valve, built with openFOAM and ParaView</span></center>
 
 
 
@@ -94,7 +94,7 @@ Unfortunately, the SimFlow output files seem to have a compilation error that ma
 
 ### Transient Flow Case
 
-Because openFOAM comes with several tutorials for using its various solvers, I have decided to work with those and adapt them to suit the heat exchanger problem, rather than building the repository from scratch. The pisoFoam solver within openFOAM uses the PISO (Pressure-Implicit with Splitting of Operators) algorithm to decouple the pressure and velocity fields in the momentum equation, allowing for an efficient and stable solution of the incompressible Navier-Stokes equations. Additionally, pisoFoam can handle turbulence modeling by incorporating various turbulence models, such as k-epsilon, k-omega, or large-eddy simulation (LES), to account for the effects of turbulence on the fluid flow. The pisoFoam solver source code contains an example repo that models a ball valve system that consists of a pipe with a ball valve in the middle, which regulates the flow of fluid through the pipe. This example showcases a FEA solution of the incompressible Navier-Stokes equations for transient conditions in three dimensions. After running this simulation, I was able to develop the following animation using ParaView:
+Because openFOAM comes with several tutorials for using its various solvers, I have decided to work with those and adapt them to suit the heat exchanger problem, rather than building the repository from scratch. Right now, I am experimenting with the pisoFoam solver, which uses the PISO (Pressure-Implicit with Splitting of Operators) algorithm to decouple the pressure and velocity fields in the momentum equation, allowing for an efficient and stable solution of the incompressible Navier-Stokes equations. Additionally, pisoFoam can handle turbulence modeling by incorporating various turbulence models, such as k-epsilon, k-omega, or large-eddy simulation (LES), to account for the effects of turbulence on the fluid flow. The pisoFoam solver source code contains an example repo that models a ball valve system that consists of a pipe with a ball valve in the middle, which regulates the flow of fluid through the pipe. This example showcases a FEA solution of the incompressible Navier-Stokes equations for transient conditions in three dimensions. After running this simulation, I was able to develop the following animation using ParaView:
 
 <br>
 
@@ -110,9 +110,11 @@ Because openFOAM comes with several tutorials for using its various solvers, I h
 <br>
 
 
-Note that the pisoFoam solver does not incorporate temperature values into its solutions, but there are other solvers available within the openFOAM library that can use pisoFoam's **outputs as inputs** for modeling temperature effects on flow. Also note that the results of this workflow will not be able to incorporate bouyant forces into a given flow regime, as flow profiles are determined solely using the Navier-Stokes equations.
+Note that the pisoFoam solver does not incorporate temperature values into its solutions, but there are other solvers available within the openFOAM library that can use pisoFoam's **outputs as inputs** for modeling temperature effects on flow. Also note that the results of this workflow will not be able to incorporate bouyant forces into a given flow regime, as flow profiles are determined solely using the idealized Navier-Stokes equations.
 
-These simulation results confirm that I can simulate transient flow in three dimensions; next, I will confirm that these flow data can be analyzed to create realistic temperature data using the scalarTransportFoam solver within openFOAM's source code.
+After some thought, I've decided it's likely not appropriate to apply this particular solver to modeling a heat exchanger, so I will be researching other openFOAM solvers with relevant examples that will better model the parameters pertinent to heat exchanger design.
+
+However, these simulation results confirm that I can simulate transient flow in three dimensions, and can easily adjust the base openFOAM examples to suit other applications.
 
 
 <br>
