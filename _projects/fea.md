@@ -10,12 +10,12 @@ highlight: True
 
 {% raw %}
 <video class="responsive-video-header" autoplay loop muted playsinline>
-  <source src="/assets/videos/ballvalve10fps.webm" type="video/webm">
+  <source src="/assets/videos/slicedviewHX200f30fps.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
 
-<center><span style="font-size: 18px;">transient 3D flow through ball valve, built with openFOAM and ParaView</span></center>
+<center><span style="font-size: 20px;">transient 3D flow through shell-and-tube heat exchanger, built with openFOAM and ParaView</span></center>
 
 
 
@@ -127,10 +127,31 @@ After some thought, I've decided it's likely not appropriate to apply the PisoFo
 
 However, these simulation results confirm that I can locally simulate transient flow in three dimensions, and can easily adjust the base openFOAM examples to suit other applications.
 
+### chtMultiRegionFoam Experimentation Update
+
+My research on openFOAM solvers has converged on the chtMultiRegionFoam solver, which is specifically designed to model conjugate heat transfer (CHT) in systems involving multiple regions with different materials and fluid-solid interfaces. Further, this solver is designed for incompressible (or compressible, to a degree), turbulent or laminar, and transient or steady state simulations, all of which encapsulate the majority of heat exchange systems.
+
+As luck would have it, this solver has a shell-and-tube simulation case study hidden in its source code. I have staged and run that simulation, and developed the following animation:
+
+<br>
+
+{% raw %}
+<video class="responsive-video" autoplay loop muted playsinline>
+  <source src="/assets/videos/slicedviewHX200f30fps.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+{% endraw %}
+
+<br>
+
+To be sure that I can adapt this to future use-cases, I will be attempting to create a chtMultiRegionFoam sim of our earlier HX case study. This may or may not work, given that the HX has zero-width walls and tubes, and must be modeled as thermal resistance values. Stay tuned!
 
 <br>
 
 I will provide detailed updates as I make more progress. If you have any ideas for improving this strategy, please reach out! I would love to collaborate on this and ideas for generalizing this procedure as digital twin simulation tech becomes more accessible.
+
+
+
 
 <center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
 
