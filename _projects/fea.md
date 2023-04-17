@@ -11,6 +11,7 @@ highlight: True
 {% raw %}
 <video class="responsive-video-header" autoplay loop muted playsinline>
   <source src="/assets/videos/slicedviewHX200f30fps.webm" type="video/webm">
+  <source src="/assets/videos/slicedviewHX200f30fps.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
@@ -101,6 +102,7 @@ Because openFOAM comes with several tutorials for using its various solvers, I h
 {% raw %}
 <video class="responsive-video" autoplay loop muted playsinline>
   <source src="/assets/videos/ballvalve10fps.webm" type="video/webm">
+  <source src="/assets/videos/ballvalve10fps.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
