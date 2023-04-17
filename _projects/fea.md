@@ -12,7 +12,6 @@ highlight: True
 <video class="responsive-video-header" autoplay loop muted playsinline>
   <source src="/assets/videos/ballvalve10fps.mp4" type="video/mp4">
   <source src="/assets/videos/ballvalve10fps.webm" type="video/webm">
-  <source src="/assets/videos/ballvalve10fps.ogv" type="video/ogg">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
@@ -120,10 +119,11 @@ Because openFOAM comes with several tutorials for using its various solvers, I h
 </video>
 {% endraw %}
 
+<br>
 
-Note that the pisoFoam solver does not incorporate temperature values into its solutions, but there are other solvers available within the openFOAM library that can use pisoFoam's **outputs as inputs** for modeling temperature effects on flow. Also note that the results of this workflow will not be able to incorporate bouyant forces into a given flow regime, as flow profiles are determined solely using the idealized Navier-Stokes equations.
+Note that the pisoFoam solver in the OpenFOAM library does not directly incorporate temperature values into its solutions, which may affect the modeling of buoyant forces. However, there are other solvers available within the OpenFOAM library that can handle temperature effects on flow, using pisoFoam's outputs as inputs. It's important to note that the results of this workflow might not fully capture the influence of buoyant forces in a given flow regime if the buoyancy term is not included in the Navier-Stokes equations. To account for buoyant forces, users should consider solvers that incorporate the buoyancy term, such as buoyantPisoFoam, which extends the pisoFoam solver to handle buoyancy-driven flows.
 
-After some thought, I've decided it's likely not appropriate to apply this particular solver to modeling a heat exchanger, so I will be researching other openFOAM solvers with relevant examples that will better model the parameters pertinent to heat exchanger design.
+After some thought, I've decided it's likely not appropriate to apply this the PisoFoam solver to modeling a heat exchanger, so I will be further researching bouyantPisoFoam other openFOAM solvers with relevant examples that will better model the parameters pertinent to heat exchanger design.
 
 However, these simulation results confirm that I can simulate transient flow in three dimensions, and can easily adjust the base openFOAM examples to suit other applications.
 
