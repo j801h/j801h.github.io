@@ -50,6 +50,7 @@ The performance analysis of the shell-and-tube heat exchanger revealed significa
 
 As a then sophomore in undergrad who had not yet taken Thermo, I have to credit my former supervisor, Eric Bidinger, with assigning this project to me and recognizing its likely outcomes. With his excellent mentorship, we did ultimately pull and clean the heat exchanger, improving its effectiveness by ~33%.
 
-<br>
+<center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
 
+<br>
 If any of these projects sound pertinent to a role you are trying to fill, please consider [reaching out](/contact), or feel free to browse my [other recent projects](/portfolio).

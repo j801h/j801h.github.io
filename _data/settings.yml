@@ -109,7 +109,7 @@ skills:
   color: '#5AB0FF'
   description: "Experienced in Construction Management, overseeing projects from start to finish."
 
-- name: AutoCAD
+- name: AutoCAD / CAD-likes
   value: 70
   color: '#002FA7'
   description: "Skilled in AutoCAD, creating detailed 2D and 3D designs."
@@ -152,6 +152,26 @@ skills:
 - name: Scope of Work Documentation
   value: 80
   color: '#7C16C9'
+  description: "Skilled in preparing Scope of Work Documentation, defining project objectives and deliverables."
+
+- name: Natural Language Processing
+  value: 60
+  color: '#00A778'
+  description: "Skilled in preparing Scope of Work Documentation, defining project objectives and deliverables."
+
+- name: MATLAB
+  value: 70
+  color: '#A7002F'
+  description: "Skilled in preparing Scope of Work Documentation, defining project objectives and deliverables."
+
+- name: Root Cause Analysis
+  value: 90
+  color: '#A76100'
+  description: "Skilled in preparing Scope of Work Documentation, defining project objectives and deliverables."
+
+- name: Finite Element Analysis / CFD
+  value: 70
+  color: '#F4A700'
   description: "Skilled in preparing Scope of Work Documentation, defining project objectives and deliverables."
 
 - name: Continuous Improvement

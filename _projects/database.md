@@ -142,6 +142,9 @@ This simple concept was used to accumulate 250,000+ line items for equipment pro
 - __Cost optimization__: Access to historical pricing and supplier performance data enables better negotiation and vendor selection, potentially leading to cost savings and improved supplier relationships.
 
 
-More impressive tools exist today for accomplishing tasks like this ([see: GPT-4 w/ Pinecone embeddings](https://www.youtube.com/watch?v=ih9PBGVVOO4)), but when considered in its context two years ago, I think this project effectively demonstrates my commitment to adopting and leveraging new technologies in order to empower myself and others.
+More impressive tools exist today for accomplishing tasks like this ([see: GPT-4 w/ embeddings](https://www.youtube.com/watch?v=ih9PBGVVOO4) - note that 3rd-party vector / embedding storage is not necessary, [np.array will do](https://twitter.com/karpathy/status/1647372603907280896?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Etweet)), but when considered in its context two years ago, I think this project effectively demonstrates my commitment to adopting and leveraging new technologies in order to empower myself and others.
 
+<center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
+
+<br>
 If any of these projects sound pertinent to a role you are trying to fill, please consider [reaching out](/contact) for a conversation, or feel free to browse my [other recent projects](/portfolio).

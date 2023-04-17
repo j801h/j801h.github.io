@@ -10,7 +10,6 @@ highlight: True
 
 {% raw %}
 <video class="responsive-video-header" autoplay loop muted playsinline>
-  <source src="/assets/videos/ballvalve10fps.mp4" type="video/mp4">
   <source src="/assets/videos/ballvalve10fps.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
@@ -99,7 +98,6 @@ Because openFOAM comes with several tutorials for using its various solvers, I h
 
 {% raw %}
 <video class="responsive-video" autoplay loop muted playsinline>
-  <source src="/assets/videos/ballvalve10fps.mp4" type="video/mp4">
   <source src="/assets/videos/ballvalve10fps.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
@@ -131,5 +129,9 @@ However, these simulation results confirm that I can simulate transient flow in 
 <br>
 
 I will provide detailed updates as I make more progress. If you have any ideas for improving this strategy, please reach out! I would love to collaborate on this and ideas for generalizing this procedure as digital twin simulation tech becomes more accessible.
+
+<center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
+
+<br>
 
 If any of these projects sound pertinent to a role you are trying to fill, please consider [reaching out](/contact), or feel free to browse my [other recent projects](/portfolio).

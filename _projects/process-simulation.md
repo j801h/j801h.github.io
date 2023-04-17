@@ -14,7 +14,7 @@ highlight: True
 In my role as a Process Design Engineer, a colleague and I collaborated on enhancing a distillery's production scheduling process, concentrating on process refinement. We pinpointed opportunities for automation, system integration, advanced optimization, and better stakeholder communication. By developing a tailor-made process simulation using reinforcement learning, we maximized equipment usage while adhering to scheduling constraints. Our solution considerably reduced the scheduling team's workload and elevated equipment utilization rates by roughly 20%.
 
 ### The Quick Takeaway
-This distillery process improvement project demonstrates my analytical skills and innovative mindset--skills that I believe are essential for success in eco-friendly operations. The experience I gained in refining production scheduling and equipment utilization through automation and reinforcement learning can be directly applied to support sustainable practices.
+This distillery process improvement project demonstrates my analytical skills and innovative mindset--skills that I believe are essential for success in sustainable operations. The experience I gained in refining production scheduling and equipment utilization through automation and reinforcement learning can be directly applied to support sustainable practices.
 
 My effective communication and collaboration with various stakeholders, along with my commitment to continuous learning, contribute to my ability to address diverse challenges.
 
@@ -98,7 +98,8 @@ Although we successfully delivered a valuable tool to this client, we were unabl
 
 Nevertheless, our client was satisfied with our tailor-made solution addressing their process needs, and my partner and I learned a substantial amount throughout the journey.
 
-<br>
+<center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
 
+<br>
 If any of these projects seem relevant to a role you are trying to fill, please consider [reaching out](/contact) or feel free to explore my [other recent work](/portfolio).
 

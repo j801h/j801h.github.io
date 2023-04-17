@@ -10,12 +10,12 @@ tags: ["Client Relationships", "Process Design", "Team Efforts"]
 <br>
 
 ### Summary
-As a Junior Process Engineer, I had the privilege of working closely with a senior process engineer on a system bottleneck study for a nutritional beverage and supplements production facility. Our goal was to optimize and increase the throughput of the production process by identifying inefficiencies and proposing effective corrections. Through diligent data collection, analysis, and collaboration, we uncovered critical bottlenecks and proposed an effective solution that was accepted by the client. This solution not only enhanced the facility's production capabilities but also promoted energy efficiency and reduced the need for manual intervention in their batching operations, freeing personnel to more proactively operate equipment and anticipate production needs.
+As a Junior Process Engineer, I collaborated with a senior process engineer to conduct a system bottleneck analysis for a nutritional beverage and supplements production facility. Our objective was to improve the production process throughput by identifying inefficiencies and suggesting appropriate solutions. By systematically collecting and analyzing data, we identified crucial bottlenecks and proposed a solution that the client accepted. This solution increased the facility's production capacity, improved energy efficiency, and minimized manual intervention in batching operations, allowing staff to better manage equipment and predict production requirements.
 
 ### The Quick Take-Away
-This project highlights my ability to identify and address inefficiencies in complex production systems, a skillset transferable to sustainable industries. By conducting a thorough bottleneck study, we improved the client's production process while reducing waste and resource consumption.
+This project highlights my ability to identify and address inefficiencies in complex production systems. By conducting a thorough bottleneck study, we improved the client's production process while reducing waste and resource consumption.
 
-My experience in data analysis, collaboration, and innovative problem-solving helps in areas in which identifying inefficiencies and implementing eco-friendly solutions is crucial.
+My experience in data analysis, collaboration, and best-practices-based problem-solving is directly transferable to areas in which identifying inefficiencies and implementing actionable solutions is crucial.
 
 By leveraging my process engineering background and problem-solving skills, I can contribute to the development of sustainable processes and technologies that promote waste reduction.
 
@@ -38,7 +38,11 @@ __Project Outcomes:__
 - __Client acceptance and implementation__: our client ultimately accepted our primary recommendations and implemented our design with the help of their usual construction partner.
 
 
-This project honed my skills in system analysis and process improvement design, demonstrating my aptitude for addressing complex production system challenges. The experience I gained in identifying inefficiencies and implementing eco-friendly solutions is directly applicable to sustainable industries. Moving forward, I am eager to leverage my process engineering background and problem-solving skills to foster environmentally friendly processes and promote sustainability across a diverse range of industries.
+This project experience provided me with invaluable knowledge and skill development in the areas of process engineering, data analysis, and problem-solving. Working closely with a senior process engineer, I gained hands-on experience in conducting system bottleneck analyses, collecting and analyzing data, and identifying inefficiencies in a production process. Additionally, I developed the ability to propose effective solutions tailored to the unique needs of a client, resulting in improved production capacity, energy efficiency, and reduced waste. This experience has not only strengthened my technical expertise but also enhanced my ability to collaborate and communicate with diverse stakeholders. Moving forward, I am confident in my capacity to tackle complex challenges and contribute to the development of sustainable and efficient processes in various industries.
 
+
+<center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
+
+<br>
 
 If this description reminds you of a role that you are trying to fill, please do not hesitate to [reach out](/contact). I enjoy system studies and would love to contribute to yours! Also, please take a moment to review my [other recent work](/portfolio).
