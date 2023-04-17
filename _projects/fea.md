@@ -15,7 +15,7 @@ highlight: True
 </video>
 {% endraw %}
 
-<center><span style="font-size: 16px;">transient 3D flow through ball valve, built with openFOAM and ParaView</span></center>
+<center><span style="font-size: 18px;">transient 3D flow through ball valve, built with openFOAM and ParaView</span></center>
 
 
 
@@ -25,14 +25,16 @@ highlight: True
 
 Finite Element Analysis (FEA) is a powerful computational method for simulating complex physical systems, such as heat exchangers (or ball valves), by dividing them into smaller elements. By solving time-dependent governing equations and applying boundary conditions, FEA can model transient conditions and provide insights into temperature profiles, pressure drop, heat transfer rates, and potential hotspots or areas of high stress. 
 
-To that end, I have sourced a CAD file for a shell-and-tube heat exchanger, developed mesh representations for the exchanger's flow regions, and have simulated and visualized a steady-state flow condition for the exchanger. My ultimate goal here is to develop a generalized workflow for converting CAD files and process constraints into high-fidelity models of transient process behaviors. 
+To that end, I have sourced a CAD file for a shell-and-tube heat exchanger, developed mesh representations for the exchanger's flow regions, and have simulated and visualized a steady-state flow condition for the exchanger. I am now experimenting with various transient CFD solvers within the openFOAM library to find one appropriate for this project.
+
+My ultimate goal here is to develop a generalized workflow for converting CAD files and process constraints into high-fidelity models of transient process behaviors. 
 
 As I make more progress, I will provide detailed updates and welcome any ideas for improving this strategy or generalizing it for wider applications in digital twin simulation technology.
 
 ### The Quick Take-Away
 This project demonstrates my ability to tackle complex engineering challenges and optimize performance in critical systems. By modeling transient conditions and extracting valuable insights from complex simulation behaviors, this project highlights my proficiency in leveraging computational techniques to enhance the efficiency and reliability of process designs.
 
-Optimizing heat exchangers and other thermal systems plays a crucial role in reducing energy consumption, minimizing waste, and maximizing resource utilization. My experience with FEA allows me to contribute directly to these objectives by applying my skills to design, analyze, and optimize energy-efficient and sustainable solutions. Furthermore, my knowledge of digital twin simulation technology opens up opportunities for simulating and predicting the performance of systems in real-time, ensuring high-quality operational strategies.
+Optimizing heat exchangers and other fluid-mechanical systems plays a crucial role in reducing energy consumption, minimizing waste, and maximizing resource utilization. My experience with FEA allows me to contribute directly to these objectives by applying my skills to design, analyze, and optimize energy-efficient and sustainable solutions. Furthermore, my knowledge of digital twin simulation technology opens up opportunities for simulating and predicting the performance of systems in real-time, ensuring high-quality operational strategies.
 
 ### Objective
 
@@ -121,9 +123,9 @@ Because openFOAM comes with several tutorials for using its various solvers, I h
 
 Note that the pisoFoam solver in the OpenFOAM library does not directly incorporate temperature values into its solutions, which may affect the modeling of buoyant forces. However, there are other solvers available within the OpenFOAM library that can handle temperature effects on flow, using pisoFoam's outputs as inputs. It's important to note that the results of this workflow might not fully capture the influence of buoyant forces in a given flow regime if the buoyancy term is not included in the Navier-Stokes equations. To account for buoyant forces, users should consider solvers that incorporate the buoyancy term, such as buoyantPisoFoam, which extends the pisoFoam solver to handle buoyancy-driven flows.
 
-After some thought, I've decided it's likely not appropriate to apply this the PisoFoam solver to modeling a heat exchanger, so I will be further researching bouyantPisoFoam other openFOAM solvers with relevant examples that will better model the parameters pertinent to heat exchanger design.
+After some thought, I've decided it's likely not appropriate to apply the PisoFoam solver to modeling a heat exchanger, so I will be further researching bouyantPisoFoam other openFOAM solvers with relevant examples that will better model the parameters pertinent to heat exchanger design.
 
-However, these simulation results confirm that I can simulate transient flow in three dimensions, and can easily adjust the base openFOAM examples to suit other applications.
+However, these simulation results confirm that I can locally simulate transient flow in three dimensions, and can easily adjust the base openFOAM examples to suit other applications.
 
 
 <br>
