@@ -209,6 +209,24 @@ Where the boundary conditions set for the simulation are as follows:
 
 <br>
 
+and the process conditions for the co-current exchanger are as follows:
+
+<br>
+
+| Property          | Shell-side fluid: Water | Heat exchanger material: Aluminum | Tube-side fluid: Water |
+|-------------------|-------------------------|-----------------------------------|------------------------|
+| Molecular weight  | 18                      | 27                                | 18                     |
+| Density (rho)     | 1000 kg/m³              | 2700 kg/m³                        | 1000 kg/m³             |
+| Specific heat     | Cp: 4181 J/(kg·K)       | Cv: 900 J/(kg·K)                  | Cp: 4181 J/(kg·K)      |
+| Reference enthalpy| 0 J/mol                 | 0 J/mol                           | 0 J/mol                |
+| Dynamic viscosity | 959e-6 kg/(m·s)         | N/A                               | 959e-6 kg/(m·s)        |
+| Prandtl number    | 6.62                    | N/A                               | 6.62                   |
+| Thermal conductivity | N/A                   | 200 W/(m·K)                       | N/A                    |
+| Initial temperature| 600 K                   | N/A                               | 300 K                  |
+| Mass flow rate    | 0.05 kg/s               | N/A                               | 0.05 kg/s              |
+
+<br>
+
 To be sure that I can adapt this to future use-cases, I will be attempting to create a chtMultiRegionFoam sim of our earlier HX case study by modifying this case-study. This may or may not work, given that the HX has zero-width walls and tubes, and must be modeled as thermal resistance values, but I think it is worth a shot. Stay tuned!
 
 I will provide detailed updates as I make more progress. If you have any ideas for improving this strategy, please reach out! I would love to collaborate on this and ideas for generalizing this procedure as digital twin simulation tech becomes more accessible.
