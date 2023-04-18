@@ -24,9 +24,9 @@ highlight: True
 
 ### Summary
 
-Finite Element Analysis (FEA) is a powerful computational method for simulating complex physical systems, such as heat exchangers (or ball valves), by dividing them into smaller elements. By solving time-dependent governing equations and applying boundary conditions, FEA can model transient conditions and provide insights into temperature profiles, pressure drop, heat transfer rates, and potential hotspots or areas of high stress. 
+Finite Element Analysis (FEA) is a powerful computational method for simulating complex physical systems, such as heat exchangers, by dividing them into smaller elements. By solving time-dependent governing equations and applying boundary conditions, FEA can model transient conditions and provide insights into temperature profiles, pressure drop, heat transfer rates, and potential hotspots or areas of high stress. 
 
-To that end, I have sourced a CAD file for a shell-and-tube heat exchanger, developed mesh representations for the exchanger's flow regions, and have simulated and visualized a steady-state flow condition for the exchanger. I am now experimenting with various transient CFD solvers within the openFOAM library to find one appropriate for this project.
+To that end, I have sourced a CAD file for a shell-and-tube heat exchanger, developed mesh representations for the exchanger's flow regions, and have simulated and visualized a steady-state flow condition for the exchanger. I have also experimented with various fluid dynamics solvers within the openFOAM library, and have settled on teh chtMultiRegionFoam solver for this project. Further, I have successfully staged and simulated a case-study for an HX that I found hidden in the openFOAM source code (animation shown above; details below).
 
 My ultimate goal here is to develop a generalized workflow for converting CAD files and process constraints into high-fidelity models of transient process behaviors. 
 
@@ -42,7 +42,7 @@ Optimizing heat exchangers and other fluid-mechanical systems plays a crucial ro
 To accurately model transient process conditions within a shell-and-tube heat exchanger using FEA and only Free-and-Open-Source-Software (FOSS) tools. 
 
 ### Progress-to-date
-So far, I have sourced an appropriate STL file for a shell-and-tube heat exchanger and performed necessary pre-processing steps to ensure accurate mesh dimensions:
+I have sourced an appropriate STL file for a shell-and-tube heat exchanger and performed necessary pre-processing steps to ensure accurate mesh dimensions:
 <br> 
 
 ![HX Body](\assets\images\portfolio\HX\3d_exchanger_body.png){: .responsive-image}
@@ -90,12 +90,12 @@ Where 'U' represents fluid velocity, and points are colored based on fluid veloc
 
 Unfortunately, the SimFlow output files seem to have a compilation error that makes the temperature data unreadable, so I will be troubleshooting that next.
 
-*minor update here: because openFOAM is designed for Linux systems, I think the temperature data I generated on my Windows machine was corrupted due to compatibility issues. I have created an ubuntu partition on my machine that is more compatible with openFOAM outputs, and have had better results (see below). If I have time, I will regenerate these results on Ubuntu to get accurate temperature data.
+*minor update here: because openFOAM is designed for Linux systems, I think the temperature data I generated on my Windows machine was corrupted due to compatibility issues. I have created an ubuntu partition on my machine that is more compatible with openFOAM outputs, and have had better results with other simulations (see below). If I have time, I will regenerate these results on Ubuntu to get accurate temperature data.
 
 
 ### Transient Flow Case
 
-Because openFOAM comes with several tutorials for using its various solvers, I have decided to work with those and adapt them to suit the heat exchanger problem, rather than building the repository from scratch. Right now, I am experimenting with the pisoFoam solver, which uses the PISO (Pressure-Implicit with Splitting of Operators) algorithm to decouple the pressure and velocity fields in the momentum equation, allowing for an efficient and stable solution of the incompressible Navier-Stokes equations. Additionally, pisoFoam can handle turbulence modeling by incorporating various turbulence models, such as k-epsilon, k-omega, or large-eddy simulation (LES), to account for the effects of turbulence on the fluid flow. The pisoFoam solver source code contains an example repo that models a ball valve system that consists of a pipe with a ball valve in the middle, which regulates the flow of fluid through the pipe. This example showcases a FEA solution of the incompressible Navier-Stokes equations for transient conditions in three dimensions. After running this simulation, I was able to develop the following animation using ParaView:
+Because openFOAM comes with several tutorials for using its various solvers, I have decided to work with those and adapt them to suit the heat exchanger problem, rather than building the repository from scratch. I have experimented with the pisoFoam solver, which uses the PISO (Pressure-Implicit with Splitting of Operators) algorithm to decouple the pressure and velocity fields in the momentum equation, allowing for an efficient and stable solution of the incompressible Navier-Stokes equations. Additionally, pisoFoam can handle turbulence modeling by incorporating various turbulence models, such as k-epsilon, k-omega, or large-eddy simulation (LES), to account for the effects of turbulence on the fluid flow. The pisoFoam solver source code contains an example repo that models a system that consists of a pipe with a ball valve in the middle, which regulates the flow of fluid through the pipe. This example showcases a FEA solution of the incompressible Navier-Stokes equations for transient conditions in three dimensions. After running this simulation, I was able to develop the following animation using ParaView:
 
 <br>
 
@@ -125,7 +125,7 @@ Because openFOAM comes with several tutorials for using its various solvers, I h
 
 Note that the pisoFoam solver in the OpenFOAM library does not directly incorporate temperature values into its solutions, which may affect the modeling of buoyant forces. However, there are other solvers available within the OpenFOAM library that can handle temperature effects on flow, using pisoFoam's outputs as inputs. It's important to note that the results of this workflow might not fully capture the influence of buoyant forces in a given flow regime if the buoyancy term is not included in the Navier-Stokes equations. To account for buoyant forces, users should consider solvers that incorporate the buoyancy term, such as buoyantPisoFoam, which extends the pisoFoam solver to handle buoyancy-driven flows.
 
-After some thought, I've decided it's likely not appropriate to apply the PisoFoam solver to modeling a heat exchanger, so I will be further researching bouyantPisoFoam other openFOAM solvers with relevant examples that will better model the parameters pertinent to heat exchanger design.
+After some thought, I've decided it's likely not appropriate to apply the PisoFoam solver to modeling a heat exchanger, so I have done further research on other openFOAM solvers with relevant examples that better model the parameters pertinent to heat exchanger design (see below).
 
 However, these simulation results confirm that I can locally simulate transient flow in three dimensions, and can easily adjust the base openFOAM examples to suit other applications.
 
@@ -133,7 +133,7 @@ However, these simulation results confirm that I can locally simulate transient 
 
 My research on openFOAM solvers has converged on the chtMultiRegionFoam solver, which is specifically designed to model conjugate heat transfer (CHT) in systems involving multiple regions with different materials and fluid-solid interfaces. Further, this solver is designed for incompressible (or compressible, to a degree), turbulent or laminar, and transient or steady state simulations, all of which encapsulate the majority of heat exchange systems.
 
-As luck would have it, this solver has a shell-and-tube simulation case study hidden in its source code. I have staged and run that simulation, and developed the following animation:
+As luck would have it, this solver has a shell-and-tube simulation case study hidden in its source code (I swear you can't find this using google/chatGPT/Bing or in the openFOAM documentation). I have staged and run that simulation, and developed the following animation:
 
 <br>
 
