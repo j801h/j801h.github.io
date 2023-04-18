@@ -10,8 +10,8 @@ highlight: True
 
 {% raw %}
 <video class="responsive-video-header" autoplay loop muted playsinline>
-  <source src="/assets/videos/slicedviewHX200f30fps.webm" type="video/webm">
-  <source src="/assets/videos/slicedviewHX200f30fps.mp4" type="video/mp4">
+  <source src="/assets/videos/lq8fps160frames.webm" type="video/webm">
+  <source src="/assets/videos/lq8fps160frames.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
@@ -24,13 +24,13 @@ highlight: True
 
 ### Summary
 
-Finite Element Analysis (FEA) is a powerful computational method for simulating complex physical systems, such as heat exchangers, by dividing them into smaller elements. By solving time-dependent governing equations and applying boundary conditions, FEA can model transient conditions and provide insights into temperature profiles, pressure drop, heat transfer rates, and potential hotspots or areas of high stress. 
+Finite Element Analysis (FEA) is a powerful computational method for simulating complex physical systems, such as heat exchangers, by dividing them into smaller elements. By solving time-dependent governing equations and applying boundary conditions, FEA can model transient conditions and provide insights into temperature profiles, pressure drops, heat transfer rates, and potential hotspots or areas of high stress.
 
-To that end, I have sourced a CAD file for a shell-and-tube heat exchanger, developed mesh representations for the exchanger's flow regions, and have simulated and visualized a steady-state flow condition for the exchanger. I have also experimented with various fluid dynamics solvers within the openFOAM library, and have settled on teh chtMultiRegionFoam solver for this project. Further, I have successfully staged and simulated a case-study for an HX that I found hidden in the openFOAM source code (animation shown above; details below).
+In this project, I aim to create a generalized workflow for converting CAD files and process constraints into high-fidelity models of transient process behaviors for shell-and-tube heat exchangers. I will use these models to develop and leverage rigorous design insights.
 
-My ultimate goal here is to develop a generalized workflow for converting CAD files and process constraints into high-fidelity models of transient process behaviors. 
+To achieve this, I have sourced a CAD file for a shell-and-tube heat exchanger and developed mesh representations for the exchanger's flow regions. I have simulated and visualized steady-state flow conditions and experimented with various fluid dynamics solvers within the openFOAM library, ultimately selecting the chtMultiRegionFoam solver for this project. Additionally, I have successfully staged and simulated a case study for a heat exchanger found in the openFOAM source code (animation shown above; details below).
 
-As I make more progress, I will provide detailed updates and welcome any ideas for improving this strategy or generalizing it for wider applications in digital twin simulation technology.
+As I continue to make progress, I will provide detailed updates and welcome any ideas for improving this strategy or generalizing it for wider applications in digital twin simulation technology.
 
 ### The Quick Take-Away
 This project demonstrates my ability to tackle complex engineering challenges and optimize performance in critical systems. By modeling transient conditions and extracting valuable insights from complex simulation behaviors, this project highlights my proficiency in leveraging computational techniques to enhance the efficiency and reliability of process designs.
@@ -39,7 +39,7 @@ Optimizing heat exchangers and other fluid-mechanical systems plays a crucial ro
 
 ### Objective
 
-To accurately model transient process conditions within a shell-and-tube heat exchanger using FEA and only Free-and-Open-Source-Software (FOSS) tools. 
+To accurately model transient process conditions within a shell-and-tube heat exchanger using FEA and only Free-and-Open-Source-Software (FOSS) tools, and to rigorously evaluate the simulation results.
 
 ### Progress-to-date
 I have sourced an appropriate STL file for a shell-and-tube heat exchanger and performed necessary pre-processing steps to ensure accurate mesh dimensions:
@@ -49,7 +49,7 @@ I have sourced an appropriate STL file for a shell-and-tube heat exchanger and p
 
 <br>
 
- Further, I have developed the mesh representations for the exchanger, shown here:
+ I have also developed the mesh representations for the exchanger's hot and cold fluid regions, shown here:
 
 <br>
 
@@ -58,8 +58,10 @@ I have sourced an appropriate STL file for a shell-and-tube heat exchanger and p
 <br>
 
 ![Cold Region](\assets\images\portfolio\HX\full_mesh.png){: .responsive-image}
+
 <br>
-Before diving into transient flow modeling, I decided to check the viability of the meshes using a steady-state approach, with hot and cold water on the tube and shell-sides, respectively. Initial process parameters were as follows:
+
+To validate the meshes, I used a steady-state approach with hot and cold water on the tube and shell-sides, respectively, and the following initial process parameters:
 
 <br>
 
@@ -70,7 +72,7 @@ Before diving into transient flow modeling, I decided to check the viability of 
 
 <br>
 
-Using SimFlow to experiment with steady-state conditions, and ParaView for data visualization, I got the following results:
+Using SimFlow for steady-state condition experimentation and ParaView for data visualization, I obtained the following results:
 
 <br>
 
@@ -78,7 +80,7 @@ Using SimFlow to experiment with steady-state conditions, and ParaView for data 
 
 <br>
 
-Where residuals refer to the difference between the calculated value of a variable and its expected value based on its governing equations. Commonly used threshold values are in the range of 1e-4 to 1e-6. These values can be adjusted depending on the desired level of accuracy and the computational resources available, but for this idealized experimental application, these values are acceptable.
+Residuals represent the difference between calculated and expected values based on governing equations. Acceptable thresholds are typically in the range of 1e-4 to 1e-6, which is sufficient for this idealized experimental application.
 
 <br>
 
@@ -86,16 +88,18 @@ Where residuals refer to the difference between the calculated value of a variab
 
 <br>
 
-Where 'U' represents fluid velocity, and points are colored based on fluid velocity profile. Looks good!
+Points are colored based on fluid velocity profiles, with 'U' representing fluid velocity.
 
-Unfortunately, the SimFlow output files seem to have a compilation error that makes the temperature data unreadable, so I will be troubleshooting that next.
+However, the SimFlow output files had a compilation error, making the temperature data unreadable. I will troubleshoot this issue next.
 
-*minor update here: because openFOAM is designed for Linux systems, I think the temperature data I generated on my Windows machine was corrupted due to compatibility issues. I have created an ubuntu partition on my machine that is more compatible with openFOAM outputs, and have had better results with other simulations (see below). If I have time, I will regenerate these results on Ubuntu to get accurate temperature data.
+*Update: I suspect the temperature data corruption is due to compatibility issues between openFOAM and my Windows machine, as openFOAM is designed for Linux systems. After creating an Ubuntu partition for better compatibility, I have had better results with other simulations. I will regenerate these results on Ubuntu to obtain accurate temperature data if time permits.
 
 
 ### Transient Flow Case
 
-Because openFOAM comes with several tutorials for using its various solvers, I have decided to work with those and adapt them to suit the heat exchanger problem, rather than building the repository from scratch. I have experimented with the pisoFoam solver, which uses the PISO (Pressure-Implicit with Splitting of Operators) algorithm to decouple the pressure and velocity fields in the momentum equation, allowing for an efficient and stable solution of the incompressible Navier-Stokes equations. Additionally, pisoFoam can handle turbulence modeling by incorporating various turbulence models, such as k-epsilon, k-omega, or large-eddy simulation (LES), to account for the effects of turbulence on the fluid flow. The pisoFoam solver source code contains an example repo that models a system that consists of a pipe with a ball valve in the middle, which regulates the flow of fluid through the pipe. This example showcases a FEA solution of the incompressible Navier-Stokes equations for transient conditions in three dimensions. After running this simulation, I was able to develop the following animation using ParaView:
+To adapt existing openFOAM tutorials for the heat exchanger problem, I experimented with the pisoFoam solver, which uses the PISO (Pressure-Implicit with Splitting of Operators) algorithm to decouple pressure and velocity fields in the momentum equation. This allows for efficient and stable solutions of the incompressible Navier-Stokes equations. PisoFoam can also handle turbulence modeling by incorporating various models, such as k-epsilon, k-omega, or large-eddy simulation (LES).
+
+The pisoFoam solver source code includes an example of a system with a pipe and a ball valve, demonstrating a 3D FEA solution of the incompressible Navier-Stokes equations for transient conditions. I created animations using ParaView to visualize the simulation results:
 
 <br>
 
@@ -109,7 +113,7 @@ Because openFOAM comes with several tutorials for using its various solvers, I h
 
 <br>
 <br>
-**and again, doubling the inlet pressure:**
+**Doubling the inlet pressure:**
 <br>
 <br>
 
@@ -123,15 +127,15 @@ Because openFOAM comes with several tutorials for using its various solvers, I h
 
 <br>
 
-Note that the pisoFoam solver in the OpenFOAM library does not directly incorporate temperature values into its solutions, which may affect the modeling of buoyant forces. However, there are other solvers available within the OpenFOAM library that can handle temperature effects on flow, using pisoFoam's outputs as inputs. It's important to note that the results of this workflow might not fully capture the influence of buoyant forces in a given flow regime if the buoyancy term is not included in the Navier-Stokes equations. To account for buoyant forces, users should consider solvers that incorporate the buoyancy term, such as buoyantPisoFoam, which extends the pisoFoam solver to handle buoyancy-driven flows.
+However, the pisoFoam solver does not directly incorporate temperature values into its solutions, which may affect the modeling of buoyant forces. While there are solvers in the openFOAM library that can handle temperature effects on flow using pisoFoam's outputs, the results might not fully capture the influence of buoyant forces if the buoyancy term is not included in the Navier-Stokes equations. To account for buoyant forces, one might consider solvers like buoyantPisoFoam, which extends pisoFoam to handle buoyancy-driven flows.
 
-After some thought, I've decided it's likely not appropriate to apply the PisoFoam solver to modeling a heat exchanger, so I have done further research on other openFOAM solvers with relevant examples that better model the parameters pertinent to heat exchanger design (see below).
+After further consideration, I concluded that pisoFoam is not suitable for modeling a heat exchanger. Instead, I researched other openFOAM solvers with relevant examples that better model heat exchanger design parameters (see below).
 
-However, these simulation results confirm that I can locally simulate transient flow in three dimensions, and can easily adjust the base openFOAM examples to suit other applications.
+On the bright side, these simulation results confirm my ability to locally simulate transient flow in three dimensions and adapt base openFOAM examples for other applications.
 
 ### chtMultiRegionFoam Experimentation Update
 
-My research on openFOAM solvers has converged on the chtMultiRegionFoam solver, which is specifically designed to model conjugate heat transfer (CHT) in systems involving multiple regions with different materials and fluid-solid interfaces. Further, this solver is designed for incompressible (or compressible, to a degree), turbulent or laminar, and transient or steady state simulations, all of which encapsulate the majority of heat exchange systems.
+My research on openFOAM solvers has led me to the chtMultiRegionFoam solver, specifically designed for modeling conjugate heat transfer (CHT) in systems involving multiple regions with different materials and fluid-solid interfaces. This solver is suitable for incompressible (or somewhat compressible), turbulent or laminar, single-phase, and transient or steady-state simulations, which cover the majority of heat exchange systems.
 
 As luck would have it, this solver has a shell-and-tube simulation case study hidden in its source code (I swear you can't find this using google/chatGPT/Bing or in the openFOAM documentation). I have staged and run that simulation, and developed the following animation:
 
@@ -139,8 +143,8 @@ As luck would have it, this solver has a shell-and-tube simulation case study hi
 
 {% raw %}
 <video class="responsive-video" autoplay loop muted playsinline>
-  <source src="/assets/videos/slicedviewHX200f30fps.webm" type="video/webm">
-  <source src="/assets/videos/slicedviewHX200f30fps.mp4" type="video/mp4">
+  <source src="/assets/videos/lq8fps160frames.webm" type="video/webm">
+  <source src="/assets/videos/lq8fps160frames.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
@@ -232,7 +236,12 @@ and the process conditions for the co-current exchanger are as follows:
 
 <br>
 
-To be sure that I can adapt this to future use-cases, I will be attempting to create a chtMultiRegionFoam sim of our earlier HX case study by modifying this case-study. This may or may not work, given that the HX has zero-width walls and tubes, and must be modeled as thermal resistance values, but I think it is worth a shot. Stay tuned!
+Because this is a more realistic model and simulation than the original from my project statement, which has zero-thickness walls, and is simply modeled as a series of thermal resistance values, I will continue working with the openFOAM case-study to better understand its assumptions and to challenge its accuracy as rigorously as I can (without experimental data). For starters, those viscosity values look weird...
+
+
+<center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
+
+<br>
 
 I will provide detailed updates as I make more progress. If you have any ideas for improving this strategy, please reach out! I would love to collaborate on this and ideas for generalizing this procedure as digital twin simulation tech becomes more accessible.
 
