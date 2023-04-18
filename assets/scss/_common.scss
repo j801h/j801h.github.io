@@ -572,9 +572,9 @@ li {
     transition: max-width 0.3s ease; /* Add a smooth transition for expanding the table */
   }
   
-  .custom-table table:hover {
-    max-width: 150%; /* Set the desired expanded size on hover */
-  }
+  // .custom-table table:hover {
+  //   max-width: 105%; /* Set the desired expanded size on hover */
+  // }
   
   .custom-table th,
   .custom-table td {

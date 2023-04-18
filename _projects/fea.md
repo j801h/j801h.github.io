@@ -140,15 +140,76 @@ As luck would have it, this solver has a shell-and-tube simulation case study hi
 {% raw %}
 <video class="responsive-video" autoplay loop muted playsinline>
   <source src="/assets/videos/slicedviewHX200f30fps.webm" type="video/webm">
+  <source src="/assets/videos/slicedviewHX200f30fps.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
 
 <br>
 
-To be sure that I can adapt this to future use-cases, I will be attempting to create a chtMultiRegionFoam sim of our earlier HX case study. This may or may not work, given that the HX has zero-width walls and tubes, and must be modeled as thermal resistance values. Stay tuned!
+Where the boundary conditions set for the simulation are as follows:
 
 <br>
+
+| Region | Field   | Boundary       | Type                                                | Description                                      |
+|--------|---------|----------------|-----------------------------------------------------|--------------------------------------------------|
+| Shell  | alphat  | .*             | calculated                                          | Values calculated by the solver                  |
+|        | epsilon | lower          | inletOutlet                                         | Inlet or outlet depending on flow direction      |
+|        |         | upper          | turbulentMixingLengthDissipationRateInlet          | Dissipation rate at the inlet with specified mixing length |
+|        |         | wall           | epsilonWallFunction                                 | Wall function for turbulent dissipation rate     |
+|        | k       | lower          | inletOutlet                                         | Inlet or outlet depending on flow direction      |
+|        |         | upper          | turbulentIntensityKineticEnergyInlet                | Kinetic energy at the inlet with specified turbulence intensity |
+|        |         | wall           | kqRWallFunction                                     | Wall function for turbulent kinetic energy       |
+|        | nut     | lower          | calculated                                          | Values calculated by the solver                  |
+|        |         | upper          | calculated                                          | Values calculated by the solver                  |
+|        |         | wall           | nutkWallFunction                                    | Wall function for turbulent kinematic viscosity  |
+|        | p       | .*             | calculated                                          | Values calculated by the solver                  |
+|        | p_rgh   | lower          | fixedValue                                          | Fixed value boundary condition                   |
+|        |         | upper          | fixedFluxPressure                                   | Zero normal gradient for pressure minus hydrostatic pressure |
+|        |         | wall           | fixedFluxPressure                                   | Zero normal gradient for pressure minus hydrostatic pressure |
+|        | T       | lower          | inletOutlet                                         | Inlet or outlet depending on flow direction      |
+|        |         | upper          | fixedValue                                          | Fixed value boundary condition                   |
+|        |         | walls          | zeroGradient                                        | No gradient normal to the boundary face         |
+|        |         | shell_to_solid | compressible::turbulentTemperatureCoupledBaffleMixed  | Thermally coupled baffle faces between shell and solid  |
+|        | U       | lower          | pressureInletOutletVelocity                         | Inlet or outlet depending on flow direction      |
+|        |         | upper          | flowRateInletVelocity                               | Mass flow rate for the inlet                     |
+|        |         | wall           | noSlip                                              | Zero velocity at the boundary (no-slip)          |
+
+
+<br>
+
+| Region | Field   | Boundary         | Type                                                | Description                                      |
+|--------|---------|------------------|-----------------------------------------------------|--------------------------------------------------|
+| Solid  | T       | external         | zeroGradient                                        | No gradient normal to the boundary face         |
+|        |         | solid_to_shell   | compressible::turbulentTemperatureCoupledBaffleMixed  | Thermally coupled baffle faces between solid and shell |
+|        |         | solid_to_tube    | compressible::turbulentTemperatureCoupledBaffleMixed  | Thermally coupled baffle faces between solid and tube  |
+|--------|---------|------------------|-----------------------------------------------------|--------------------------------------------------|
+| Tube   | alphat  | .*               | calculated                                          | Values calculated by the solver                  |
+|        | epsilon | lower            | turbulentMixingLengthDissipationRateInlet          | Dissipation rate at the inlet with specified mixing length |
+|        |         | upper            | inletOutlet                                         | Inlet or outlet depending on flow direction      |
+|        |         | wall             | epsilonWallFunction                                 | Wall function for turbulent dissipation rate     |
+|        | k       | lower            | turbulentIntensityKineticEnergyInlet                | Kinetic energy at the inlet with specified turbulence intensity |
+|        |         | upper            | inletOutlet                                         | Inlet or outlet depending on flow direction      |
+|        |         | wall             | kqRWallFunction                                     | Wall function for turbulent kinetic energy       |
+|        | nut     | lower            | calculated                                          | Values calculated by the solver                  |
+|        |         | upper            | calculated                                          | Values calculated by the solver                  |
+|        |         | wall             | nutkWallFunction                                    | Wall function for turbulent kinematic viscosity  |
+|        | p       | .*               | calculated                                          | Values calculated by the solver                  |
+|        | p_rgh   | lower            | fixedFluxPressure                                   | Zero normal gradient for pressure minus hydrostatic pressure |
+|        |         | upper            | fixedValue                                          | Fixed value boundary condition                   |
+|        |         | wall             | fixedFluxPressure                                   | Zero normal gradient for pressure minus hydrostatic pressure |
+|        | T       | lower            | fixedValue                                          | Fixed value boundary condition                   |
+|        |         | upper            | inletOutlet                                         | Inlet or outlet depending on flow direction      |
+|        |         | walls            | zeroGradient                                        | No gradient normal to the boundary face         |
+|        |         | tube_to_solid    | compressible::turbulentTemperatureCoupledBaffleMixed  | Thermally coupled baffle faces between tube and solid  |
+|        | U       | lower            | flowRateInletVelocity                               | Mass flow rate for the inlet                     |
+|        |         | upper            | pressureInletOutletVelocity                         | Inlet or outlet depending on flow direction      |
+|        |         | wall             | noSlip                                              | Zero velocity at the boundary (no-slip)          |
+
+
+<br>
+
+To be sure that I can adapt this to future use-cases, I will be attempting to create a chtMultiRegionFoam sim of our earlier HX case study by modifying this case-study. This may or may not work, given that the HX has zero-width walls and tubes, and must be modeled as thermal resistance values, but I think it is worth a shot. Stay tuned!
 
 I will provide detailed updates as I make more progress. If you have any ideas for improving this strategy, please reach out! I would love to collaborate on this and ideas for generalizing this procedure as digital twin simulation tech becomes more accessible.
 
