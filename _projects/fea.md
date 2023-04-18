@@ -214,7 +214,7 @@ Where the boundary conditions set for the simulation are as follows:
 |        |         | upper            | pressureInletOutletVelocity                         | Inlet or outlet depending on flow direction      |
 |        |         | wall             | noSlip                                              | Zero velocity at the boundary (no-slip)          |
 
-
+<center><span style="font-size: 16px;">**Please refer to the openFOAM documentation or source code for more details on boundary condition functions**</span></center>
 
 <br>
 
@@ -233,6 +233,7 @@ and the process conditions for the co-current exchanger are as follows:
 | Thermal conductivity | N/A                   | 200 W/(m·K)                       | N/A                    |
 | Initial temperature| 600 K                   | N/A                               | 300 K                  |
 | Mass flow rate    | 0.05 kg/s               | N/A                               | 0.05 kg/s              |
+
 
 <br>
 
