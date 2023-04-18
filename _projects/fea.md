@@ -26,7 +26,7 @@ highlight: True
 
 Finite Element Analysis (FEA) is a powerful computational method for simulating complex physical systems, such as heat exchangers, by dividing them into smaller elements. By solving time-dependent governing equations and applying boundary conditions, FEA can model transient conditions and provide insights into temperature profiles, pressure drops, heat transfer rates, and potential hotspots or areas of high stress.
 
-In this project, I aim to create a generalized workflow for converting CAD files and process constraints into high-fidelity models of transient process behaviors for shell-and-tube heat exchangers. I will use these models to develop and leverage rigorous design insights.
+In this project, I aim to create a generalized workflow for converting CAD files and process constraints into high-fidelity models of transient process behaviors. I will use these models to develop and leverage rigorous design insights.
 
 To achieve this, I have sourced a CAD file for a shell-and-tube heat exchanger and developed mesh representations for the exchanger's flow regions. I have simulated and visualized steady-state flow conditions and experimented with various fluid dynamics solvers within the openFOAM library, ultimately selecting the chtMultiRegionFoam solver for this project. Additionally, I have successfully staged and simulated a case study for a heat exchanger found in the openFOAM source code (animation shown above; details below).
 
