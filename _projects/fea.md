@@ -151,6 +151,7 @@ Where the boundary conditions set for the simulation are as follows:
 
 <br>
 
+
 | Region | Field   | Boundary       | Type                                                | Description                                      |
 |--------|---------|----------------|-----------------------------------------------------|--------------------------------------------------|
 | Shell  | alphat  | .*             | calculated                                          | Values calculated by the solver                  |
@@ -176,7 +177,10 @@ Where the boundary conditions set for the simulation are as follows:
 |        |         | wall           | noSlip                                              | Zero velocity at the boundary (no-slip)          |
 
 
+
 <br>
+
+
 
 | Region | Field   | Boundary         | Type                                                | Description                                      |
 |--------|---------|------------------|-----------------------------------------------------|--------------------------------------------------|
@@ -205,6 +209,7 @@ Where the boundary conditions set for the simulation are as follows:
 |        | U       | lower            | flowRateInletVelocity                               | Mass flow rate for the inlet                     |
 |        |         | upper            | pressureInletOutletVelocity                         | Inlet or outlet depending on flow direction      |
 |        |         | wall             | noSlip                                              | Zero velocity at the boundary (no-slip)          |
+
 
 
 <br>

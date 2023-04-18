@@ -562,11 +562,14 @@ li {
   }
   }
 
-
-
-
+  .custom-table {
+    overflow-x: auto; /* Enable horizontal scrolling when needed */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS devices */
+  }
+  
   .custom-table table {
     border-collapse: collapse;
+    width: 100%;
     max-width: 90%;
     margin: 0 auto;
     transition: max-width 0.3s ease; /* Add a smooth transition for expanding the table */
@@ -581,6 +584,7 @@ li {
     border: 1px solid #ccc;
     padding: 8px;
     text-align: left;
+    word-break: break-word; /* Allow breaking words */
   }
   
   .custom-table th {
@@ -596,7 +600,17 @@ li {
     background-color: #e0e0e0;
   }
   
-
+  @media screen and (max-width: 767px) { /* Adjust this breakpoint according to your design */
+    /* Optional: Adjust table padding and font size for smaller screens */
+    .custom-table th,
+    .custom-table td {
+      padding: 2px;
+      font-size: 8px;
+    }
+  }
+  
+  
+  
   .responsive-video {
     width: 80%;
     max-width: 100%;
