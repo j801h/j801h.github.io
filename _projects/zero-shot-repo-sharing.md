@@ -9,7 +9,7 @@ highlight: True
 
 ### Summary
 
-When working on large, code-based projects, it can be difficult to feed a GPT all of the context needed to provide insightful responses. The following script makes use of the 8,000 token context length available through OpenAI's API (double that of the chat interface) by scraping the contents of a user-provided folder directory, and serving that content as context to GPT-4 as a preamble to a user prompt. This has proven useful to me as I have been working on other projects (mainly [Finite Element Analysis S&T Heat Exchanger (ongoing)]( {% link _projects/process-simulation.md %} )), and has dramatically accelerated my ability to iterate and leverage new insights.
+When working on large, code-based projects, it can be difficult to feed a GPT all of the context needed to provide insightful responses. The following script makes use of the 8,000 token context length available through OpenAI's API (double that of the chat interface) by scraping the contents of a user-provided folder directory, and serving that content as context to GPT-4 as a preamble to a user prompt. This has proven useful to me as I have been working on other projects (mainly [Finite Element Analysis S&T Heat Exchanger (ongoing)]( {% link _projects/fea.md %} )), and has dramatically accelerated my ability to iterate and leverage new insights.
 
 <br>
 
