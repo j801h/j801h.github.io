@@ -208,6 +208,9 @@ While GPT outputs are prone to hallucination and must be thoroughly audited, thi
 
 ** note that this method costs ~ $0.06 / 1k tokens generated and requires OAI API access.
 
+** Also, hopefully this goes without saying, but it is important not to share any proprietary information with an LLM. OpenAI does provide a way to [opt out of data collection](https://docs.google.com/forms/d/e/1FAIpQLScrnC-_A7JFs4LbIuzevQ_78hVERlNqqCPCt3d8XqnKOfdRdQ/viewform), but sensitive information should always stay in-house, lest we all be replaced by GPTs within the year ;)
+
+
 <center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
 
 <br>
