@@ -13,7 +13,6 @@ copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.c
 
 menu:
   - { name: About, link: "/about" }
-  # - { name: Blog, link: "/blog" }
   - { name: Portfolio, link: "/portfolio" }
   - { name: Contact, link: "/contact" }
 
@@ -71,10 +70,10 @@ education:
 
 
 # Portfolio Page
-portfolio-label:
-  - { title: "Construction Management", type: "cm" }
-  - { title: "Process Design", type: "design" }
-  - { title: "Emerging Technologies", type: "newtech" }
+# portfolio-label:
+#   - { title: "Construction Management", type: "cm" }
+#   - { title: "Process Design", type: "design" }
+#   - { title: "Emerging Technologies", type: "newtech" }
 
 
 skills-title: Skills

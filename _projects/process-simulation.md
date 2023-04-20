@@ -4,7 +4,6 @@ title: Distillery Process Simulation
 image: /assets/images/portfolio/item-1.png
 description: A brief description of your project.
 tags: ["Process Design", "Process Simulation", "Team Efforts", "Client Relationships"]
-highlight: True
 ---
 ### Role: Process Optimization Consultant
 
