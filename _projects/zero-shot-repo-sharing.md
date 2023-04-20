@@ -3,7 +3,7 @@ layout: page
 title: LongformPrompt - Extended GPT Prompts with Subdirectory Context
 image: /assets/images/portfolio/item-9.png
 description: A brief description of your project.
-tags: ["Extra-Curricular"]
+tags: ["Extra-Curricular", "Team Efforts"]
 highlight: True
 ---
 
