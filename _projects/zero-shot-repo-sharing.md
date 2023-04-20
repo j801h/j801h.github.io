@@ -207,7 +207,7 @@ These are great, actionable insights! Beyond asking for critiques on my general 
 ### Significance
 While GPT outputs are prone to hallucination and must be thoroughly audited, this framework provides a method for rapidly developing new insights on a project. Feel free to give it a try on your own projects! 
 
-** note that this method costs ~ $0.06 / 1k tokens generated and requires OAI API access.
+** note that this method costs ~ $0.06 / 1k tokens generated and requires OAI API access. Further, OAI charges $0.03 / 1000 tokens uploaded, so mind the size of your subdirectory. Fortunately, they do cap a request at 8K tokens, or $0.24
 
 ** Also, hopefully this goes without saying, but it is important not to share any proprietary information with an LLM. OpenAI does provide a way to [opt out of data collection](https://docs.google.com/forms/d/e/1FAIpQLScrnC-_A7JFs4LbIuzevQ_78hVERlNqqCPCt3d8XqnKOfdRdQ/viewform), but sensitive information should always stay in-house, lest we all be replaced by GPTs within the year ;)
 
