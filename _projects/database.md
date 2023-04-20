@@ -4,7 +4,6 @@ title: Building a Database of Historical Procurement Data
 image: /assets/images/portfolio/item-8.png
 description: A brief description of your project.
 tags: ["Extra-Curricular", "Team Efforts"]
-highlight: True
 ---
 ### Summary
 I developed a Python script that utilized NLP techniques, specifically fuzzy matching, to navigate my previous firm's siloed network architecture and accumulate historical procurement data across 30 years of projects. This resulted in the creation of a comprehensive database containing over 250,000 line items, which improved decision-making, efficiency, collaboration, knowledge retention, and cost optimization. 
