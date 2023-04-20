@@ -4,7 +4,6 @@ title: Zero-Shot GPT Code Critic
 image: /assets/images/portfolio/item-9.png
 description: A brief description of your project.
 tags: ["Extra-Curricular"]
-highlight: True
 ---
 
 ### Summary
@@ -146,7 +145,7 @@ Please note that these recommendations are based on the provided code files and 
 ```
 <br>
 
-Next, I provided the 'constant' subdirectory as context (This folder stores the properties and parameters that remain constant throughout the simulation. It includes information on the physical properties of materials (e.g., transportProperties, thermophysicalProperties) and mesh-related data (e.g., polyMesh folder, which contains the computational mesh files). By specifying constants, users can define the simulation's physical environment.) and received the following response:
+Next, I provided the 'constant' subdirectory as context (this folder stores the properties and parameters that remain constant throughout the simulation. It includes information on the physical properties of materials (e.g., transportProperties, thermophysicalProperties) and mesh-related data (e.g., polyMesh folder, which contains the computational mesh files). By specifying constants, users can define the simulation's physical environment.) and received the following response:
 
 <br>
 
@@ -203,4 +202,10 @@ Overall, the presented case setup seems to provide a good starting point for ana
 ### Significance
 While GPT outputs are prone to hallucination and must be thoroughly audited, this framework provides a method for rapidly developing new insights on a project. Feel free to give it a try on your own projects! 
 
-** note that this method costs ~ $0.06 / 1k tokens generated and requires OAI API access
+** note that this method costs ~ $0.06 / 1k tokens generated and requires OAI API access.
+
+<center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
+
+<br>
+
+If any of these projects seem relevant to a role you are looking to fill, please consider [reaching out](/contact) for a conversation, or feel free to browse my [other recent work](/portfolio).
