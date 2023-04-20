@@ -4,6 +4,7 @@ title: Zero-Shot GPT Code Critic
 image: /assets/images/portfolio/item-9.png
 description: A brief description of your project.
 tags: ["Extra-Curricular"]
+highlight: True
 ---
 
 ### Summary
