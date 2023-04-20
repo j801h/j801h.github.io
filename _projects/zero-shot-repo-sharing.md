@@ -119,7 +119,7 @@ if __name__ == "__main__":
     else:
         print("Invalid directory path.")
 ```
-
+<center><span style="font-size: 16px;">made in collaboration with GPT-4, of course</span></center>
 <br>
 
 ### Example
