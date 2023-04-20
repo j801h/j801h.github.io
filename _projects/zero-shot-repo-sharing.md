@@ -199,6 +199,10 @@ Overall, the presented case setup seems to provide a good starting point for ana
 
 <br>
 
+These are great, actionable insights! Beyond asking for critiques on my general approach to a project, I have used this method for building entire codeblocks / features into this site, which itself is a large repository with a lot of interdependencies and moving parts, and most of the time it works on the first try. It's hard to overstate how helpful this has been.
+
+<br>
+
 ### Significance
 While GPT outputs are prone to hallucination and must be thoroughly audited, this framework provides a method for rapidly developing new insights on a project. Feel free to give it a try on your own projects! 
 
