@@ -1,6 +1,6 @@
 ---
 layout: page
-title: LongformPrompt - Generating Extended Prompts with Subdirectory Context
+title: LongformPrompt - Extended GPT Prompts with Subdirectory Context
 image: /assets/images/portfolio/item-9.png
 description: A brief description of your project.
 tags: ["Extra-Curricular"]
