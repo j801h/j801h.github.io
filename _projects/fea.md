@@ -113,14 +113,14 @@ The pisoFoam solver source code includes an example of a system with a pipe and 
 
 <br>
 <br>
-**Doubling the inlet pressure:**
+**To verify that I can alter base openFOAM case-studies, I changed the inlet pressure, refined the mesh long the length of the pipe, and re-ran the simulation:**
 <br>
 <br>
 
 {% raw %}
 <video class="responsive-video" autoplay loop muted playsinline>
-  <source src="/assets/videos/ballvalve20pa10fps.mp4" type="video/mp4">
-  <source src="/assets/videos/ballvalve20pa10fps.webm" type="video/webm">
+  <source src="/assets/videos/10fps120framesslicedvalvefinemesh.mp4" type="video/mp4">
+  <source src="/assets/videos/10fps120framesslicedvalvefinemesh.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
