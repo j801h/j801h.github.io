@@ -97,9 +97,9 @@ However, the SimFlow output files had a compilation error, making the temperatur
 
 ### Transient Flow Case
 
-To adapt existing openFOAM tutorials for the heat exchanger problem, I experimented with the pisoFoam solver, which uses the PISO (Pressure-Implicit with Splitting of Operators) algorithm to decouple pressure and velocity fields in the momentum equation. This allows for efficient and stable solutions of the incompressible Navier-Stokes equations. PisoFoam can also handle turbulence modeling by incorporating various models, such as k-epsilon, k-omega, or large-eddy simulation (LES).
+To adapt existing openFOAM tutorials for the heat exchanger problem, I experimented with the pimpleFoam solver, which utilizes the PIMPLE (Pressure-Implicit with Interleaved Linking of Equation) algorithm, which is an extension of the PISO (Pressure-Implicit with Splitting of Operators) method. This algorithm allows for the efficient and stable solution of incompressible Navier-Stokes equations by combining the benefits of both SIMPLE (Semi-Implicit Method for Pressure-Linked Equations) and PISO methods. It enables the simulation of both steady-state and transient cases by iterating between pressure and velocity fields in the momentum equation. PimpleFoam can also handle turbulence modeling by incorporating various models, such as k-epsilon, k-omega, or large-eddy simulation (LES).
 
-The pisoFoam solver source code includes an example of a system with a pipe and a ball valve, demonstrating a 3D FEA solution of the incompressible Navier-Stokes equations for transient conditions. I created animations using ParaView to visualize the simulation results:
+The pimpleFoam solver source code includes an example of a system with a pipe and a ball valve, demonstrating a 3D FEA solution of the incompressible Navier-Stokes equations for transient conditions. I created animations using ParaView to visualize the simulation results:
 
 <br>
 
@@ -113,23 +113,23 @@ The pisoFoam solver source code includes an example of a system with a pipe and 
 
 <br>
 <br>
-**To verify that I can alter base openFOAM case-studies, I changed the inlet pressure, refined the mesh long the length of the pipe, and re-ran the simulation:**
+**To verify that I can alter base openFOAM case-studies, I changed the inlet pressure, refined the mesh along each dimension, and re-ran the simulation. The following is a spliced internal view of the resulting system:**
 <br>
 <br>
 
 {% raw %}
 <video class="responsive-video" autoplay loop muted playsinline>
-  <source src="/assets/videos/10fps120framesslicedvalvefinemesh.mp4" type="video/mp4">
-  <source src="/assets/videos/10fps120framesslicedvalvefinemesh.webm" type="video/webm">
+  <source src="/assets/videos/10fps120frameballvalverefined.mp4" type="video/mp4">
+  <source src="/assets/videos/10fps120frameballvalverefined.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
 
 <br>
 
-However, the pisoFoam solver does not directly incorporate temperature values into its solutions, which may affect the modeling of buoyant forces. While there are solvers in the openFOAM library that can handle temperature effects on flow using pisoFoam's outputs, the results might not fully capture the influence of buoyant forces if the buoyancy term is not included in the Navier-Stokes equations. To account for buoyant forces, one might consider solvers like buoyantPisoFoam, which extends pisoFoam to handle buoyancy-driven flows.
+However, the pimpleFoam solver does not directly incorporate temperature values into its solutions, which may affect the modeling of buoyant forces. While there are solvers in the openFOAM library that can handle temperature effects on flow using pimpleFoam's outputs, the results might not fully capture the influence of buoyant forces if the buoyancy term is not included in the Navier-Stokes equations. To account for buoyant forces, one might consider solvers like buoyantPisoFoam, which extends pimpleFoam to handle buoyancy-driven flows.
 
-After further consideration, I concluded that pisoFoam is not suitable for modeling a heat exchanger. Instead, I researched other openFOAM solvers with relevant examples that better model heat exchanger design parameters (see below).
+After further consideration, I concluded that pimpleFoam is not suitable for modeling a heat exchanger. Instead, I researched other openFOAM solvers with relevant examples that better model heat exchanger design parameters (see below).
 
 On the bright side, these simulation results confirm my ability to locally simulate transient flow in three dimensions and adapt base openFOAM examples for other applications.
 
