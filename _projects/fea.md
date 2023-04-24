@@ -16,7 +16,7 @@ highlight: True
 </video>
 {% endraw %}
 
-<center><span style="font-size: 20px;">transient 3D flow through shell-and-tube heat exchanger, built with openFOAM and ParaView</span></center>
+<center><span style="font-size: 20px;">transient 3D heat flow through shell-and-tube heat exchanger, built with openFOAM and ParaView</span></center>
 
 
 
