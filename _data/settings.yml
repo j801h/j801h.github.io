@@ -69,13 +69,6 @@ education:
     }
 
 
-# Portfolio Page
-# portfolio-label:
-#   - { title: "Construction Management", type: "cm" }
-#   - { title: "Process Design", type: "design" }
-#   - { title: "Emerging Technologies", type: "newtech" }
-
-
 skills-title: Skills
 skills:
 - name: Engineering Services QA/QC

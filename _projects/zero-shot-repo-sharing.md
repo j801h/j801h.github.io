@@ -200,7 +200,9 @@ Overall, the presented case setup seems to provide a good starting point for ana
 
 <br>
 
-These are great, actionable insights! Beyond asking for critiques on my general approach to a project, I have used this method for building entire codeblocks / features into this site, which itself is a large repository with a lot of interdependencies and moving parts, and most of the time it works on the first try. It's hard to overstate how helpful this has been.
+These are great, actionable insights! From organizational critiques to recommendations for improved turbulence modeling, I now have a lot of directions I could go in optimizing my simulation. 
+
+Beyond asking for critiques on my general approach to a project, I have used this method for building entire codeblocks / features into this site, which itself is a large repository with a lot of interdependencies and moving parts, and most of the time it works on the first try. It's hard to overstate how helpful this has been.
 
 <br>
 
