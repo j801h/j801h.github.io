@@ -113,14 +113,14 @@ The pimpleFoam solver source code includes an example of a system with a pipe an
 
 <br>
 <br>
-**To verify that I can alter base openFOAM case-studies, I changed the inlet pressure, refined the mesh along each dimension, and re-ran the simulation. The following is a spliced internal view of the resulting system:**
+**To verify that I can alter base openFOAM case-studies, I doubled the inlet pressure, refined the mesh along each dimension, did some CPU optimization, and re-ran the simulation:**
 <br>
 <br>
 
 {% raw %}
 <video class="responsive-video" autoplay loop muted playsinline>
-  <source src="/assets/videos/10fps120frameballvalverefined.mp4" type="video/mp4">
-  <source src="/assets/videos/10fps120frameballvalverefined.webm" type="video/webm">
+  <source src="/assets/videos/10fps120frameballvalvehighlyrefined.mp4" type="video/mp4">
+  <source src="/assets/videos/10fps120frameballvalvehighlyrefined.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
