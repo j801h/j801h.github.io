@@ -42,14 +42,7 @@ Optimizing heat exchangers and other fluid-mechanical systems plays a crucial ro
 To accurately model transient process conditions within a shell-and-tube heat exchanger using FEA and only Free-and-Open-Source-Software (FOSS) tools, and to rigorously evaluate the simulation results.
 
 ### Progress-to-date
-I have sourced an appropriate STL file for a shell-and-tube heat exchanger and performed necessary pre-processing steps to ensure accurate mesh dimensions:
-<br> 
-
-![HX Body](\assets\images\portfolio\HX\3d_exchanger_body.png){: .responsive-image}
-
-<br>
-
- I have also developed the mesh representations for the exchanger's hot and cold fluid regions, shown here:
+I have sourced an appropriate STL file for a shell-and-tube heat exchanger and performed necessary pre-processing steps to ensure accurate mesh dimensions I have also developed the mesh representations for the exchanger's hot and cold fluid regions, shown here:
 
 <br>
 
@@ -61,18 +54,7 @@ I have sourced an appropriate STL file for a shell-and-tube heat exchanger and p
 
 <br>
 
-To validate the meshes, I used a steady-state approach with hot and cold water on the tube and shell-sides, respectively, and the following initial process parameters:
-
-<br>
-
-|                     | Hot Side       | Cold Side    |
-| :----------:        | :-----------:  | :----------: |
-| Inlet Temperature   | 383 K          | 283 K        |
-| Fluid Velocity      | 0.02 m/s       | 0.01 m/s     |
-
-<br>
-
-Using SimFlow for steady-state condition experimentation and ParaView for data visualization, I obtained the following results:
+To validate the meshes, I used a steady-state approach with hot and cold water on the tube and shell-sides, respectively. Using SimFlow for steady-state condition experimentation and ParaView for data visualization, I obtained the following results:
 
 <br>
 
@@ -88,7 +70,7 @@ Residuals represent the difference between calculated and expected values based 
 
 <br>
 
-Points are colored based on fluid velocity profiles, with 'U' representing fluid velocity.
+Points are colored based on fluid velocity profiles, with 'U' representing fluid velocity. Note the areas of low velocity around the baffles and the lack of mesh leakage. So far so good!
 
 However, the SimFlow output files had a compilation error, making the temperature data unreadable. I will troubleshoot this issue next.
 
@@ -171,7 +153,7 @@ and the process conditions for the co-current exchanger are as follows:
 
 <br>
 
-For details about the base-case boundary conditions set in the source code, [see here]({{ site.baseurl }}{% post_url 2023-04-24-boundary-conditions-hx-openFOAM %}). 
+**For details about the base-case boundary conditions set in the source code, [see here]({{ site.baseurl }}{% post_url 2023-04-24-boundary-conditions-hx-openFOAM %}).**
 
 <br>
 
