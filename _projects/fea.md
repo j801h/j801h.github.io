@@ -133,11 +133,11 @@ After further consideration, I concluded that pimpleFoam is not suitable for mod
 
 On the bright side, these simulation results confirm my ability to locally simulate transient flow in three dimensions and adapt base openFOAM examples for other applications.
 
-### chtMultiRegionFoam Experimentation Update
+<h3 id="chtmulti-region-experiment">chtMultiRegionFoam Experimentation Update</h3>
 
 My research on openFOAM solvers has led me to the chtMultiRegionFoam solver, specifically designed for modeling conjugate heat transfer (CHT) in systems involving multiple regions with different materials and fluid-solid interfaces. This solver is suitable for incompressible (or somewhat compressible), turbulent or laminar, single-phase, and transient or steady-state simulations, which cover the majority of heat exchange systems.
 
-As luck would have it, this solver has a shell-and-tube simulation case study hidden in its source code (I swear you can't find this using google/chatGPT/Bing or in the openFOAM documentation). I have staged and run that simulation, and developed the following animation:
+As luck would have it, this solver has a shell-and-tube heat exchanger simulation case study hidden in its source code (I swear you can't find this using google/chatGPT/Bing or in the openFOAM documentation). I have staged and run that simulation, and developed the following animation:
 
 <br>
 
@@ -148,73 +148,6 @@ As luck would have it, this solver has a shell-and-tube simulation case study hi
   Your browser does not support the video tag.
 </video>
 {% endraw %}
-
-<br>
-
-Where the boundary conditions set for the simulation are as follows:
-
-<br>
-
-
-| Region | Field   | Boundary       | Type                                                | Description                                      |
-|--------|---------|----------------|-----------------------------------------------------|--------------------------------------------------|
-| Shell  | alphat  | .*             | calculated                                          | Values calculated by the solver                  |
-|        | epsilon | lower          | inletOutlet                                         | Inlet or outlet depending on flow direction      |
-|        |         | upper          | turbulentMixingLengthDissipationRateInlet          | Dissipation rate at the inlet with specified mixing length |
-|        |         | wall           | epsilonWallFunction                                 | Wall function for turbulent dissipation rate     |
-|        | k       | lower          | inletOutlet                                         | Inlet or outlet depending on flow direction      |
-|        |         | upper          | turbulentIntensityKineticEnergyInlet                | Kinetic energy at the inlet with specified turbulence intensity |
-|        |         | wall           | kqRWallFunction                                     | Wall function for turbulent kinetic energy       |
-|        | nut     | lower          | calculated                                          | Values calculated by the solver                  |
-|        |         | upper          | calculated                                          | Values calculated by the solver                  |
-|        |         | wall           | nutkWallFunction                                    | Wall function for turbulent kinematic viscosity  |
-|        | p       | .*             | calculated                                          | Values calculated by the solver                  |
-|        | p_rgh   | lower          | fixedValue                                          | Fixed value boundary condition                   |
-|        |         | upper          | fixedFluxPressure                                   | Zero normal gradient for pressure minus hydrostatic pressure |
-|        |         | wall           | fixedFluxPressure                                   | Zero normal gradient for pressure minus hydrostatic pressure |
-|        | T       | lower          | inletOutlet                                         | Inlet or outlet depending on flow direction      |
-|        |         | upper          | fixedValue                                          | Fixed value boundary condition                   |
-|        |         | walls          | zeroGradient                                        | No gradient normal to the boundary face         |
-|        |         | shell_to_solid | compressible::turbulentTemperatureCoupledBaffleMixed  | Thermally coupled baffle faces between shell and solid  |
-|        | U       | lower          | pressureInletOutletVelocity                         | Inlet or outlet depending on flow direction      |
-|        |         | upper          | flowRateInletVelocity                               | Mass flow rate for the inlet                     |
-|        |         | wall           | noSlip                                              | Zero velocity at the boundary (no-slip)          |
-
-
-
-<br>
-
-
-
-| Region | Field   | Boundary         | Type                                                | Description                                      |
-|--------|---------|------------------|-----------------------------------------------------|--------------------------------------------------|
-| Solid  | T       | external         | zeroGradient                                        | No gradient normal to the boundary face         |
-|        |         | solid_to_shell   | compressible::turbulentTemperatureCoupledBaffleMixed  | Thermally coupled baffle faces between solid and shell |
-|        |         | solid_to_tube    | compressible::turbulentTemperatureCoupledBaffleMixed  | Thermally coupled baffle faces between solid and tube  |
-|--------|---------|------------------|-----------------------------------------------------|--------------------------------------------------|
-| Tube   | alphat  | .*               | calculated                                          | Values calculated by the solver                  |
-|        | epsilon | lower            | turbulentMixingLengthDissipationRateInlet          | Dissipation rate at the inlet with specified mixing length |
-|        |         | upper            | inletOutlet                                         | Inlet or outlet depending on flow direction      |
-|        |         | wall             | epsilonWallFunction                                 | Wall function for turbulent dissipation rate     |
-|        | k       | lower            | turbulentIntensityKineticEnergyInlet                | Kinetic energy at the inlet with specified turbulence intensity |
-|        |         | upper            | inletOutlet                                         | Inlet or outlet depending on flow direction      |
-|        |         | wall             | kqRWallFunction                                     | Wall function for turbulent kinetic energy       |
-|        | nut     | lower            | calculated                                          | Values calculated by the solver                  |
-|        |         | upper            | calculated                                          | Values calculated by the solver                  |
-|        |         | wall             | nutkWallFunction                                    | Wall function for turbulent kinematic viscosity  |
-|        | p       | .*               | calculated                                          | Values calculated by the solver                  |
-|        | p_rgh   | lower            | fixedFluxPressure                                   | Zero normal gradient for pressure minus hydrostatic pressure |
-|        |         | upper            | fixedValue                                          | Fixed value boundary condition                   |
-|        |         | wall             | fixedFluxPressure                                   | Zero normal gradient for pressure minus hydrostatic pressure |
-|        | T       | lower            | fixedValue                                          | Fixed value boundary condition                   |
-|        |         | upper            | inletOutlet                                         | Inlet or outlet depending on flow direction      |
-|        |         | walls            | zeroGradient                                        | No gradient normal to the boundary face         |
-|        |         | tube_to_solid    | compressible::turbulentTemperatureCoupledBaffleMixed  | Thermally coupled baffle faces between tube and solid  |
-|        | U       | lower            | flowRateInletVelocity                               | Mass flow rate for the inlet                     |
-|        |         | upper            | pressureInletOutletVelocity                         | Inlet or outlet depending on flow direction      |
-|        |         | wall             | noSlip                                              | Zero velocity at the boundary (no-slip)          |
-
-<center><span style="font-size: 16px;">**Please refer to the openFOAM documentation or source code for more details on boundary condition functions**</span></center>
 
 <br>
 
@@ -234,6 +167,11 @@ and the process conditions for the co-current exchanger are as follows:
 | Initial temperature| 600 K                   | N/A                               | 300 K                  |
 | Mass flow rate    | 0.05 kg/s               | N/A                               | 0.05 kg/s              |
 
+
+
+<br>
+
+For details about the base-case boundary conditions set in the source code, [see here]({{ site.baseurl }}{% post_url 2023-04-24-boundary-conditions-hx-openFOAM %}). 
 
 <br>
 

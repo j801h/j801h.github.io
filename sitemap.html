@@ -1,0 +1,18 @@
+---
+layout: default
+title: Sitemap
+---
+
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+
+<div class="container">
+  <h1 class="page-title">Sitemap</h1>
+  <ul class="sitemap">
+    {% for post in sorted_posts %}
+      <li>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
