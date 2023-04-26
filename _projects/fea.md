@@ -41,8 +41,8 @@ Optimizing heat exchangers and other fluid-mechanical systems plays a crucial ro
 
 To accurately model transient process conditions within a shell-and-tube heat exchanger using FEA and only Free-and-Open-Source-Software (FOSS) tools, and to rigorously evaluate the simulation results.
 
-### Progress-to-date
-I have sourced an appropriate STL file for a shell-and-tube heat exchanger and performed necessary pre-processing steps to ensure accurate mesh dimensions I have also developed the mesh representations for the exchanger's hot and cold fluid regions, shown here:
+### Steady-State Approach
+I have sourced an appropriate STL file for a shell-and-tube heat exchanger and performed necessary pre-processing steps to ensure accurate mesh dimensions. I have also developed the mesh representations for the exchanger's hot and cold fluid regions, shown here:
 
 <br>
 
@@ -77,11 +77,11 @@ However, the SimFlow output files had a compilation error, making the temperatur
 *Update: I suspect the temperature data corruption is due to compatibility issues between openFOAM and my Windows machine, as openFOAM is designed for Linux systems. After creating an Ubuntu partition for better compatibility, I have had better results with other simulations. I will regenerate these results on Ubuntu to obtain accurate temperature data if time permits.
 
 
-### Transient Flow Case
+### Transient Flow Approach
 
 To adapt existing openFOAM tutorials for the heat exchanger problem, I experimented with the pimpleFoam solver, which utilizes the PIMPLE (Pressure-Implicit with Interleaved Linking of Equation) algorithm, which is an extension of the PISO (Pressure-Implicit with Splitting of Operators) method. This algorithm allows for the efficient and stable solution of incompressible Navier-Stokes equations by combining the benefits of both SIMPLE (Semi-Implicit Method for Pressure-Linked Equations) and PISO methods. It enables the simulation of both steady-state and transient cases by iterating between pressure and velocity fields in the momentum equation. PimpleFoam can also handle turbulence modeling by incorporating various models, such as k-epsilon, k-omega, or large-eddy simulation (LES).
 
-The pimpleFoam solver source code includes an example of a system with a pipe and a ball valve, demonstrating a 3D FEA solution of the incompressible Navier-Stokes equations for transient conditions. I created animations using ParaView to visualize the simulation results:
+The pimpleFoam solver source code includes an example of a system with a pipe and a ball valve, demonstrating a 3D FEA solution of the incompressible Navier-Stokes equations for transient conditions. I created an animation using ParaView to visualize the simulation results:
 
 <br>
 
@@ -95,7 +95,7 @@ The pimpleFoam solver source code includes an example of a system with a pipe an
 
 <br>
 <br>
-**To verify that I can alter base openFOAM case-studies, I doubled the inlet pressure, refined the mesh along each dimension, did some CPU optimization, and re-ran the simulation:**
+**Then, to verify that I can alter base openFOAM case-studies, I doubled the inlet pressure, refined the mesh along each dimension, did some CPU optimization (8-core -> 16-core processing), and re-ran the simulation:**
 <br>
 <br>
 
@@ -154,8 +154,6 @@ and the process conditions for the co-current exchanger are as follows:
 <br>
 
 **For details about the base-case boundary conditions set in the source code, [see here]({{ site.baseurl }}{% post_url 2023-04-24-boundary-conditions-hx-openFOAM %}).**
-
-<br>
 
 Because this is a more realistic model and simulation than the original from my project statement, which has zero-thickness walls, and is simply modeled as a series of thermal resistance values, I will continue working with the openFOAM case-study to better understand its assumptions and to challenge its accuracy as rigorously as I can (without experimental data). For starters, those viscosity values look weird...
 
