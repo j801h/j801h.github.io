@@ -133,7 +133,7 @@ As luck would have it, this solver has a shell-and-tube heat exchanger simulatio
 
 <br>
 
-and the process conditions for the co-current exchanger are as follows:
+and the process conditions for the **counter-current** exchanger are as follows:
 
 <br>
 
