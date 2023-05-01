@@ -194,7 +194,7 @@ Leading to the following results:
 <br>
 
 
-While not as visually striking as our original animation, due to the dramatically decreased &#x0394;T value, this simulation is more now more in-line with realistic process operations. 
+While not as visually striking as our original animation, due to the dramatically decreased &#x0394;T values and increased flowrates, this simulation is more now more in-line with realistic process operations. Next, I will spot-check the process results and do a second pass of revisions, based on critiques outlined in my [LongForm GPT Prompting]( {% link _projects/zero-shot-repo-sharing.md %} ) project.
 
 
 <center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
