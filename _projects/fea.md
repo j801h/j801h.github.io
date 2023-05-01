@@ -196,7 +196,7 @@ Leading to the following results:
 
 While not as visually striking as our original animation, due to the dramatically decreased &#x0394;T values and increased flowrates, this simulation is now more in-line with realistic process operations. Next, I will spot-check the process results and do a second pass of revisions, based on critiques outlined in my [LongForm GPT Prompting]( {% link _projects/zero-shot-repo-sharing.md %} ) project.
 
-A final round revision will include mesh refinement, time-step minimization, and other computationally-expensive optimizations; putting this off now allows for more rapid iteration while conducting other "compute-agnostic" optimizations.
+A final round revision will include mesh refinement, time-step minimization, and other computationally-expensive optimizations; putting this off now allows for more rapid iteration while conducting other "compute-independent" optimizations.
 
 <center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
 
