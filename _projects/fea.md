@@ -169,8 +169,8 @@ After reviewing the source code, my first pass of revisions include the followin
 | --- | 
 | 1. Shell side fluid is water at 600K, well above the boiling point of water --> change water temp to 370K. Removes need for 10 MPa pressure condition. |
 | 2. Changed write interval for data from 1 / sec to 30 / sec, improving animation framerate. |
-| 3. Changed tube-side water flowrate from 0.05 kg/s to 1.35 kg/s for a velocity of 2 m/s. |
-| 4. Changed shell-side water flowrate from 0.05 kg/s to 2.2 kg/s for a velocity of 0.5 m/s. |
+| 3. Changed tube-side water flowrate from 0.05 kg/s to 0.5 kg/s for a velocity of 0.75 m/s. |
+| 4. Changed shell-side water flowrate from 0.05 kg/s to 0.275 kg/s for a velocity of 0.05 m/s. |
 | 5. Decoupled fluid thermophysical parameters for separate fluid regions, allowing for distinct Prandtle / Mu values for shell- and tube-side fluids. |
 | 6. Changed dynamic viscosity of shell-side water from 959e-6 to 294e-6 (370 K). |
 | 7. Changed dynamic viscosity of tube-side water from 959e-6 to 850e-5 (300 K). |
@@ -185,8 +185,8 @@ Leading to the following results:
 
 {% raw %}
 <video class="responsive-video" autoplay loop muted playsinline>
-  <source src="/assets/videos/improvedanimationhxrevision300frames30fps.webm" type="video/webm">
-  <source src="/assets/videos/improvedanimationhxrevision300frames30fps.mp4" type="video/mp4">
+  <source src="/assets/videos/finalfinalfinal.webm" type="video/webm">
+  <source src="/assets/videos/finalfinalfinal.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
