@@ -146,7 +146,7 @@ Please note that these recommendations are based on the provided code files and 
 ```
 <br>
 
-Next, I provided the 'constant' subdirectory as context (this folder stores the properties and parameters that remain constant throughout the simulation. It includes information on the physical properties of materials (e.g., transportProperties, thermophysicalProperties) and mesh-related data (e.g., polyMesh folder, which contains the computational mesh files). By specifying constants, users can define the simulation's physical environment.) and received the following response:
+Next, I provided the 'constant' subdirectory as context (this folder stores the properties and parameters that remain constant throughout the simulation. It includes information on the physical properties of materials used in the sim.) and received the following response:
 
 <br>
 
@@ -177,7 +177,7 @@ While these improvements are primarily targeted at updating and organizing the c
 
 <br>
 
-Likewise, with the 'system' subdirectory (This folder contains essential control files that dictate the simulation's settings, numerical schemes, and solvers. Key files in this directory include controlDict (simulation control settings), fvSchemes (discretization schemes for various equations), and fvSolution (solver settings and convergence parameters). These files determine how the simulation will be executed and provide users control over the simulation process.):
+Likewise, with the 'system' subdirectory (this folder contains essential control files that dictate the simulation's settings, numerical schemes, and solvers.):
 
 <br>
 
@@ -200,7 +200,7 @@ Overall, the presented case setup seems to provide a good starting point for ana
 
 <br>
 
-These are great, actionable insights! From organizational critiques to recommendations for improved turbulence modeling, I now have a lot of directions I could go in optimizing my simulation. 
+These are great, actionable insights! From organizational critiques to recommendations for improved turbulence modeling, I now have a lot of directions I could go in optimizing my simulation. However, it should be noted that not all critiques here are valid, and each should be independently verified using reliable sources. But! This is a great starting point for my optimization process.
 
 Beyond asking for critiques on my general approach to a project, I have used this method for building entire codeblocks / features into this site, which itself is a large repository with a lot of interdependencies and moving parts, and most of the time it works on the first try. It's hard to overstate how helpful this has been.
 
@@ -208,8 +208,6 @@ Beyond asking for critiques on my general approach to a project, I have used thi
 
 ### Significance
 While GPT outputs are prone to hallucination and must be thoroughly audited, this framework provides a method for rapidly developing new insights on a project. Feel free to give it a try on your own projects! 
-
-** note that this method costs ~ $0.06 / 1k tokens generated and requires OAI API access. Further, OAI charges $0.03 / 1000 tokens uploaded, so mind the size of your subdirectory. Fortunately, they do cap a request at 8K tokens, or $0.24
 
 ** Also, hopefully this goes without saying, but it is important not to share any proprietary information with an LLM. OpenAI does provide a way to [opt out of data collection](https://docs.google.com/forms/d/e/1FAIpQLScrnC-_A7JFs4LbIuzevQ_78hVERlNqqCPCt3d8XqnKOfdRdQ/viewform), but sensitive information should always stay in-house, lest we all be replaced by GPTs within the year ;)
 
