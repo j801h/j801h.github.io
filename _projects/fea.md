@@ -185,8 +185,8 @@ Leading to the following results:
 
 {% raw %}
 <video class="responsive-video" autoplay loop muted playsinline>
-  <source src="/assets/videos/hxfirstroundrevisions120frames20fps.webm" type="video/webm">
-  <source src="/assets/videos/hxfirstroundrevisions120frames20fps.mp4" type="video/mp4">
+  <source src="/assets/videos/improvedanimationhxrevision300frames30fps.webm" type="video/webm">
+  <source src="/assets/videos/improvedanimationhxrevision300frames30fps.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 {% endraw %}
