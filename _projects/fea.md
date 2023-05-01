@@ -162,6 +162,45 @@ Because this is a more realistic model and simulation than the original from my 
 
 <br>
 
+After reviewing the source code, my first pass of revisions include the following changes:
+
+
+| Change Log for HX sim | 
+| --- | 
+| 1. Shell side fluid is water at 600K, well above the boiling point of water --> change water temp to 370K. Removes need for 10 MPa pressure condition. |
+| 2. Changed write interval for data from 1 / sec to 30 / sec, improving animation framerate. |
+| 3. Changed tube-side water flowrate from 0.05 kg/s to 1.35 kg/s for a velocity of 2 m/s. |
+| 4. Changed shell-side water flowrate from 0.05 kg/s to 2.2 for a velocity of 0.5 m/s. |
+| 5. Decoupled fluid thermophysical parameters for separate fluid regions, allowing for distinct Prandtle / Mu values for shell- and tube-side fluids. |
+| 6. Changed dynamic viscosity of shell-side water from 959e-6 to 294e-6 (370 K). |
+| 7. Changed dynamic viscosity of tube-side water from 959e-6 to 850e-5 (300 K). |
+| 8. Changed Prandtl number of shell-side water from 6.62 to 1.74, based on new dynamic viscosity and thermal diffusivity of water at 370 K is 0.167x10-6 m2/s (assuming atmospheric pressure). |
+| 9. Changed Prandtl number for tube-side water from 6.62 to 5.94. |
+
+<br>
+
+Leading to the following results:
+
+<br>
+
+{% raw %}
+<video class="responsive-video" autoplay loop muted playsinline>
+  <source src="/assets/videos/hxfirstroundrevisions120frames20fps.webm" type="video/webm">
+  <source src="/assets/videos/hxfirstroundrevisions120frames20fps.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+{% endraw %}
+
+<br>
+
+
+While not as visually striking as our original animation, due to the dramatically decreased &#x0394;T value, this simulation is more now more in-line with realistic process operations. 
+
+
+<center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
+
+<br>
+
 I will provide detailed updates as I make more progress. If you have any ideas for improving this strategy, please reach out! I would love to collaborate on this and ideas for generalizing this procedure as digital twin simulation tech becomes more accessible.
 
 
