@@ -18,7 +18,7 @@ In the context of Large Language Models (LLMs) like GPT-4, 'context length' refe
 
 Context length is crucial for LLMs because it directly impacts the model's ability to understand and generate coherent and contextually relevant responses. A longer context length allows the model to better comprehend longer input texts and generate more accurate and coherent outputs.
 
-By leveraging the 2x context length available through the OAI API, I have been able to make much more complex requests of GPT-4 while maintaining coherent dialogue.
+By utilizing the doubled context length offered by the OAI API, I have successfully managed to pose more intricate requests to GPT-4 while preserving coherent communication.
 
 <br>
 
@@ -200,7 +200,7 @@ Overall, the presented case setup seems to provide a good starting point for ana
 
 <br>
 
-These are mostly great, actionable insights! From organizational critiques to recommendations for improved turbulence modeling, I now have a lot of directions I could go in optimizing my simulation. However, it should be noted that not all critiques here are valid, and each should be independently verified using reliable sources. But! This is a great starting point for my optimization process. Further, this script can be adapted to request step-by-step guides for resolving a given critique.
+These are mostly great, actionable insights! From organizational critiques to recommendations for improved turbulence modeling, I now have several directions I could go in optimizing my simulation. However, it should be noted that not all critiques here are valid, and each should be independently verified using reliable sources. But! This is a great starting point for my optimization process. Further, this script can be adapted to request step-by-step guides for resolving a given critique.
 
 Beyond asking for feedback on my general approach to a project, I have used this method for building entire codeblocks / features into this site, which itself is a large repository with many interdependencies and moving parts, and most of the time it works on the first try. It's hard to overstate how helpful this has been.
 

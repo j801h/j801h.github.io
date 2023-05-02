@@ -20,8 +20,8 @@ By taking a proactive approach, I contributed to a 33% increase in the heat exch
 
 ### Background
 
-- Shell-and-tube heat exchangers are critical components in many industrial processes, including fertilizer production
-- Fouling is a common issue that can lead to decreased efficiency, higher operational costs, and potential equipment failure
+- Heat exchangers play a crucial role in various industrial applications, such as fertilizer production, by enabling the precise regulation of process material temperatures
+- Fouling, a widespread problem in heat exchangers, occurs when materials burn onto the internal surfaces, resulting in reduced efficiency, increased operational expenses, and potential equipment breakdown
 
 ### Data Collection
 
@@ -34,7 +34,7 @@ By taking a proactive approach, I contributed to a 33% increase in the heat exch
 
 ### Statistical Analysis:
 - Performed statistical tests to identify trends and anomalies in the performance data
-Used regression analysis to determine the relationship between various parameters and the overall heat transfer efficiency
+- Used regression analysis to determine the relationship between various parameters and the overall heat transfer efficiency
 
 ### Results
 

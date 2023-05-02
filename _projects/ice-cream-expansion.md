@@ -17,7 +17,7 @@ As a Construction Manager and Process Engineer, I was responsible for managing t
 
 
 ### Key Takeaways
-In my role, I oversaw the ice-cream facility expansion and successfully increased the client's production capacity. My responsibilities included managing mechanical, electrical, and controls construction, enforcing Lockout-Tagout procedures, and integrating additional scope items. This experience showcases my ability to manage construction projects, collaborate with stakeholders, and contribute to an organization's growth and efficiency.
+In my role, I oversaw the ice-cream facility expansion and successfully increased the client's production capacity. My responsibilities included managing mechanical, electrical, and controls construction, enforcing Lockout-Tagout procedures, integrating additional scope items, and ensuring smooth handover of process sytems. This experience showcases my ability to manage construction projects, collaborate with stakeholders, and contribute to an organization's growth and efficiency.
 
 
 

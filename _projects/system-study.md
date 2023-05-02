@@ -13,7 +13,7 @@ tags: ["Client Relationships", "Process Design", "Team Efforts"]
 As a Junior Process Engineer, I collaborated with a senior process engineer to conduct a system bottleneck analysis for a nutritional beverage and supplements production facility. Our objective was to improve the production process throughput by identifying inefficiencies and suggesting appropriate solutions. By systematically collecting and analyzing data, we identified crucial bottlenecks and proposed a solution that the client accepted. This solution increased the facility's production capacity, improved energy efficiency, and minimized manual intervention in batching operations, allowing staff to better manage equipment and predict production requirements.
 
 ### The Quick Take-Away
-This project highlights my ability to identify and address inefficiencies in complex production systems. By conducting a thorough bottleneck study, we improved the client's production process while reducing waste and resource consumption.
+This project highlights my experience identifying and addressing inefficiencies in complex production systems. By conducting a thorough bottleneck study, we improved the client's production process while reducing waste and resource consumption.
 
 My experience in data analysis, collaboration, and best-practices-based problem-solving is directly transferable to areas in which identifying inefficiencies and implementing actionable solutions is crucial.
 

@@ -23,7 +23,7 @@ I had the chance to work on a process improvement proposal project for a distill
 ### Suggested Enhancements
 Initially assigned with improving the distillery's scheduling process, we started by familiarizing ourselves with the operation and comprehending the existing process. We engaged with the production team, warehouse personnel, and management to collect insights on their pain points and concerns regarding the scheduling process. It rapidly became evident that their manual Gantt-chart-like method was antiquated and inefficient for such a large-scale operation.
 
-To gain insight into how other companies were tackling similar challenges, we investigated industry best practices and discovered that numerous successful distilleries had implemented automated scheduling tools and integrated them with other systems like inventory management and human resources.
+To gain insight into how other companies were tackling similar challenges, we investigated industry best practices and discovered that numerous successful distilleries had implemented automated scheduling tools.
 
 Equipped with this knowledge, we aimed to identify specific areas for improvement. We concentrated on automation, system integration, advanced optimization techniques, and enhanced communication among stakeholders. My teammate and I realized the opportunity to develop a new product offering for our firm and opted to create a customized process simulation that could optimize equipment utilization based on given scheduling constraints. We developed a small proof-of-concept proposal and presented it to our firm's project management team for approval.
 

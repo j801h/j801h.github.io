@@ -16,7 +16,7 @@ highlight: True
 </video>
 {% endraw %}
 
-<center><span style="font-size: 20px;">transient 3D heat flow through shell-and-tube heat exchanger, built with openFOAM and ParaView</span></center>
+<center><span style="font-size: 20px;">transient 3D heat transfer through shell-and-tube heat exchanger, built with openFOAM and ParaView</span></center>
 
 
 
@@ -28,7 +28,7 @@ Finite Element Analysis (FEA) is a powerful computational method for simulating 
 
 In this project, I aim to create a generalized workflow for converting CAD files and process constraints into high-fidelity models of transient process behaviors. I will use these models to develop and leverage rigorous design insights.
 
-To achieve this, I have sourced a CAD file for a shell-and-tube heat exchanger and developed mesh representations for the exchanger's flow regions. I have simulated and visualized steady-state flow conditions and experimented with various fluid dynamics solvers within the openFOAM library, ultimately selecting the chtMultiRegionFoam solver for this project. Additionally, I have successfully staged and simulated a case study for a heat exchanger found in the openFOAM source code (animation shown above; details below).
+To achieve this, I have simulated and visualized steady-state flow conditions within a hypothetical heat exchanger and experimented with various fluid dynamics solvers within the openFOAM library, ultimately selecting the chtMultiRegionFoam solver for this project.  Furthermore, I have successfully set up and simulated a case study involving a heat exchanger found in the openFOAM source code (animation displayed above; further details below). I am currently optimizing the case study setup and plan to submit my improvements to openFOAM upon completion.
 
 As I continue to make progress, I will provide detailed updates and welcome any ideas for improving this strategy or generalizing it for wider applications in digital twin simulation technology.
 
@@ -42,17 +42,7 @@ Optimizing heat exchangers and other fluid-mechanical systems plays a crucial ro
 To accurately model transient process conditions within a shell-and-tube heat exchanger using FEA and only Free-and-Open-Source-Software (FOSS) tools, and to rigorously evaluate the simulation results.
 
 ### Steady-State Approach
-I have sourced an appropriate STL file for a shell-and-tube heat exchanger and performed necessary pre-processing steps to ensure accurate mesh dimensions. I have also developed the mesh representations for the exchanger's hot and cold fluid regions, shown here:
-
-<br>
-
-![Hot Region](\assets\images\portfolio\HX\hot_region_mesh.png){: .responsive-image}
-
-<br>
-
-![Cold Region](\assets\images\portfolio\HX\full_mesh.png){: .responsive-image}
-
-<br>
+I have sourced an appropriate STL file for a shell-and-tube heat exchanger and developed the mesh representations for the exchanger's hot and cold fluid regions.
 
 To validate the meshes, I used a steady-state approach with hot and cold water on the tube and shell-sides, respectively. Using SimFlow for steady-state condition experimentation and ParaView for data visualization, I obtained the following results:
 
@@ -79,7 +69,7 @@ However, the SimFlow output files had a compilation error, making the temperatur
 
 ### Transient Flow Approach
 
-To adapt existing openFOAM tutorials for the heat exchanger problem, I experimented with the pimpleFoam solver, which utilizes the PIMPLE (Pressure-Implicit with Interleaved Linking of Equation) algorithm, which is an extension of the PISO (Pressure-Implicit with Splitting of Operators) method. This algorithm allows for the efficient and stable solution of incompressible Navier-Stokes equations by combining the benefits of both SIMPLE (Semi-Implicit Method for Pressure-Linked Equations) and PISO methods. It enables the simulation of both steady-state and transient cases by iterating between pressure and velocity fields in the momentum equation. PimpleFoam can also handle turbulence modeling by incorporating various models, such as k-epsilon, k-omega, or large-eddy simulation (LES).
+OpenFOAM is an open-source, versatile software package for computational fluid dynamics (CFD) simulations, widely used in various industries to model and analyze complex fluid flow and heat transfer phenomena. To adapt existing openFOAM tutorials for the heat exchanger problem, I experimented with the pimpleFoam solver, which utilizes the PIMPLE (Pressure-Implicit with Interleaved Linking of Equation) algorithm, which is an extension of the PISO (Pressure-Implicit with Splitting of Operators) method. This algorithm allows for the efficient and stable solution of incompressible Navier-Stokes equations by combining the benefits of both SIMPLE (Semi-Implicit Method for Pressure-Linked Equations) and PISO methods. It enables the simulation of both steady-state and transient cases by iterating between pressure and velocity fields in the momentum equation. PimpleFoam can also handle turbulence modeling by incorporating various models, such as k-epsilon, k-omega, or large-eddy simulation (LES).
 
 The pimpleFoam solver source code includes an example of a system with a pipe and a ball valve, demonstrating a 3D FEA solution of the incompressible Navier-Stokes equations for transient conditions. I created an animation using ParaView to visualize the simulation results:
 
@@ -95,7 +85,7 @@ The pimpleFoam solver source code includes an example of a system with a pipe an
 
 <br>
 <br>
-**Then, to verify that I can alter base openFOAM case-studies, I doubled the inlet pressure, refined the mesh along each dimension, did some CPU optimization (8-core -> 16-core processing), and re-ran the simulation:**
+Then, to verify that I can alter base openFOAM case-studies, I doubled the inlet pressure, refined the mesh along each dimension, did some CPU optimization (8-core -> 12-core processing), and re-ran the simulation:
 <br>
 <br>
 
@@ -155,7 +145,7 @@ and the process conditions for the **counter-current** exchanger are as follows:
 
 **For details about the base-case boundary conditions set in the source code, [see here]({{ site.baseurl }}{% post_url 2023-04-24-boundary-conditions-hx-openFOAM %}).**
 
-Because this is a more realistic model and simulation than the original from my project statement, which has zero-thickness walls, and is simply modeled as a series of thermal resistance values, I will continue working with the openFOAM case-study to better understand its assumptions and to challenge its accuracy as rigorously as I can (without experimental data). For starters, those viscosity values look weird...
+Because this is a more realistic model and simulation setup than the original from my project statement, which has zero-thickness walls, and is simply modeled as a series of thermal resistance values, I will continue working with the openFOAM case-study to better understand its assumptions and to challenge its accuracy as rigorously as I can (without experimental data). For starters, those viscosity values look weird...
 
 
 <center><span style="font-size: 16px;"><<<<<<<<<<>>>>>>>>>></span></center>
@@ -194,7 +184,7 @@ Leading to the following results:
 <br>
 
 
-While not as visually striking as our original animation, due to the dramatically decreased &#x0394;T values and increased flowrates, this simulation is now more in-line with realistic process operations. Next, I will spot-check the process results and do a second pass of revisions, based on critiques outlined in my [LongForm GPT Prompting]( {% link _projects/zero-shot-repo-sharing.md %} ) project.
+While not as visually striking as our original animation, due to the dramatically decreased &#x0394;T values and increased flowrates, this simulation is now more in-line with realistic process operations. Next, I will validate the simulation results with conventional HX design correlations and then do a second pass of revisions, based on critiques outlined in my [LongForm GPT Prompting]( {% link _projects/zero-shot-repo-sharing.md %} ) project.
 
 A final round revision will include mesh refinement, time-step minimization, and other computationally-expensive optimizations; putting this off now allows for more rapid iteration while conducting other "compute-independent" optimizations.
 
