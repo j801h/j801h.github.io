@@ -17,6 +17,7 @@ highlight: True
 {% endraw %}
 
 <center><span style="font-size: 20px;">transient 3D heat transfer through shell-and-tube heat exchanger, built with openFOAM and ParaView</span></center>
+<center><span style="font-size: 20px;">(values in Kelvin)</span></center>
 
 
 
@@ -60,7 +61,7 @@ Residuals represent the difference between calculated and expected values based 
 
 <br>
 
-Points are colored based on fluid velocity profiles, with 'U' representing fluid velocity. Note the areas of low velocity around the baffles and the lack of mesh leakage. So far so good!
+Points are colored based on fluid velocity profiles, with 'U' representing fluid velocity in m/s. Note the areas of low velocity around the baffles and the lack of mesh leakage. So far so good!
 
 However, the SimFlow output files had a compilation error, making the temperature data unreadable. I will troubleshoot this issue next.
 
@@ -71,7 +72,7 @@ However, the SimFlow output files had a compilation error, making the temperatur
 
 OpenFOAM is an open-source, versatile software package for computational fluid dynamics (CFD) simulations, widely used in various industries to model and analyze complex fluid flow and heat transfer phenomena. To adapt existing openFOAM tutorials for the heat exchanger problem, I experimented with the pimpleFoam solver, which utilizes the PIMPLE (Pressure-Implicit with Interleaved Linking of Equation) algorithm, which is an extension of the PISO (Pressure-Implicit with Splitting of Operators) method. This algorithm allows for the efficient and stable solution of incompressible Navier-Stokes equations by combining the benefits of both SIMPLE (Semi-Implicit Method for Pressure-Linked Equations) and PISO methods. It enables the simulation of both steady-state and transient cases by iterating between pressure and velocity fields in the momentum equation. PimpleFoam can also handle turbulence modeling by incorporating various models, such as k-epsilon, k-omega, or large-eddy simulation (LES).
 
-The pimpleFoam solver source code includes an example of a system with a pipe and a ball valve, demonstrating a 3D FEA solution of the incompressible Navier-Stokes equations for transient conditions. I created an animation using ParaView to visualize the simulation results:
+The pimpleFoam solver source code includes an example of a system with a pipe and a ball valve, demonstrating a 3D FEA solution of the incompressible Navier-Stokes equations for transient conditions. I created an animation using ParaView to visualize the fluid velocity profile simulation results:
 
 <br>
 
@@ -85,6 +86,8 @@ The pimpleFoam solver source code includes an example of a system with a pipe an
 
 <br>
 <br>
+Where velocity values are in meters per second.
+
 Then, to verify that I can alter base openFOAM case-studies, I doubled the inlet pressure, refined the mesh along each dimension, did some CPU optimization (8-core -> 12-core processing), and re-ran the simulation:
 <br>
 <br>
@@ -169,7 +172,7 @@ After reviewing the source code, my first pass of revisions include the followin
 
 <br>
 
-Leading to the following results:
+Leading to the following temperature profile:
 
 <br>
 
